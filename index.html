@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+
+	<!--Scripts-->
+	<script src  = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "js/materialize.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	<script src = "js/script.js"></script>
+	
+	<!--Stylesheets--> 
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap.min.css">
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap-theme.min.css"> 
+    <link rel = "stylesheet" type="text/css" href = "css/materialize.min.css"/> 
+	<link rel = "stylesheet" type="text/css" href = "css/css.css">
+
+	<!--Import fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather'   rel='stylesheet' type='text/css'>
+</head>
+<body> 
+	
+	<!-- NAVBAR -->
+	<nav>
+	    <div class="nav-wrapper"> 
+		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			
+			<div class="wrapper">
+				<div class="logo">
+					<img src = "img/logo-text.svg" width="40" height="35px" alt = "Churchill House MX"/>
+				</div>	    
+		
+			    <ul class = "navbtns right hide-on-med-and-down">
+				    <li><a href="">Nosotros</a></li>
+			        <li><a href="">Programas</a></li>
+			        <li><a href="">¿Cómo me inscribo?</a></li> 
+			    </ul>
+			</div>
+
+		    <ul class="side-nav" id="mobile-demo">
+		        <li><a href="">Nosotros</a></li>
+		        <li><a href="">Programas</a></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 
+		    </ul>
+	    </div>
+	</nav>
+	<!--FIN NAVBAR -->
+
+	<!--SLIDER -->
+	<section class="container-fluid slider-container">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  data-keyboard="true" data-interval="4000">
+		  	
+		  	<!-- Indicators -->
+	  		<ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">				    
+				    <div class="item active" src ="img/stadium.jpg"> 
+					  	<div class="carousel-caption">
+					    	<h3>Campamento de verano en Inglaterra</h3>
+
+					    	<button class = "blue waves-effect waves-light btn-large">
+							 	Ver detalles
+							</button>
+
+					  	</div>
+					</div>
+ 
+				    <div class="item" src="img/london.jpg"> 
+					  	<div class="carousel-caption">
+					    	<h3>Ejemplo de texto</h3>
+					    	<p>Ejemplo de descripción</p>
+					  	</div>
+					</div>
+
+					<div class="item" src="img/london2.jpg"> 
+					  	<div class="carousel-caption">
+					    	<h3>Ejemplo de texto</h3>
+					    	<p>Ejemplo de descripción</p>
+					  	</div>
+					</div>
+			</div>
+
+			  <!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    	<span class="sr-only">Next</span>
+		  	</a>
+		</div> 
+	</section> 
+	<!--FIN SLIDER -->
+
+	<!--VIDEO -->
+	<div class="container video_container">
+		<div class="embed-responsive embed-responsive-16by9 video">
+			<iframe src="https://www.youtube.com/embed/_1kvLcyu37U" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!--TEXTO -->
+	<div class="container text_container">
+		<p>
+			Con motivo de nuestros 10 años de existencia, publicamos un libro
+			maravillosamente ilustrado por Cecilia Beaven relatando la
+			experiencia vivida por nuestros jóvenes durante el verano 2015.
+			Una obra original que cuenta en imágenes la aventura de..
+		</p>
+
+		<button class = "blue waves-effect waves-light btn-large">
+		 	Compra el libro aquí
+		</button>
+	</div>
+
+	<!--VIDEO -->
+	<div class="container video_container">
+		<div class="embed-responsive embed-responsive-16by9 video">
+			<iframe src="https://www.youtube.com/embed/hIExdwcU4wg" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!--LOGO -->
+	<div class="container logo_container">					 
+		
+		<img src = "img/logo.svg" width="200" height="242" alt = "logo"/>	 
+		<p>
+			“We place children at the heart of all that we do”
+		</p>
+	</div>
+
+	<!--LOGO -->
+	<div class="container buttons_container ">				 
+		<div class="btn-ico">
+			<img src = "img/england.svg" width="150" height="132" alt = "England"/>	
+			<div class="text">Inglaterra</div>
+		</div>
+		<div class="btn-ico">
+			<img src = "img/gallery.svg" width="150" height="132" alt = "Gallery"/>	
+			<div class="text">Galeria</div>
+		</div>
+		<div class="btn-ico">
+			<img src = "img/testimonials.svg" width="150" height="132" alt = "Testimonials"/>	
+			<div class="text">Testimonios</div>
+		</div>
+	</div>
+	
+	<!-- CONTACT -->
+	<div class="container contact_container">
+		<div class="phones">
+			<div class="phone card-panel">
+				<h6>México</h6>
+				<span>
+					Churchill House México <br>
+					Tel: +52 (55) 9000 45 79 <br>
+					Atención de lunes a viernes
+					de 9:00 a 20:00 hrs 
+				</span>
+			</div>
+			<div class="phone card-panel">
+				<h6>Inglaterra</h6>
+				<span>
+					Churchill House School of English Language,
+					Spencer Square, Ramsgate, Kent, England, CT11 9EQ <br>
+					Tel: +44 (0)1843 586833 <br>
+					Fax: +44 (0)1843 584 827
+				</span>
+			</div>
+		</div>
+		<form>
+			<div class="input-field">
+	          	<input id = "name" type = "text" class = "validate">
+          		<label for = "name" data-error="Nombre incorrecto" data-success="Nombre válido">Nombre</label>
+	        </div>
+
+	        <div class="input-field">
+	          	<input id = "email" type = "email" class = "validate">
+          		<label for = "email" data-error="E-mail incorrecto" data-success="E-mail válido">E-mail</label>
+	        </div>
+
+	        <div class="input-field">
+	          	<textarea id = "textarea" class = "materialize-textarea"></textarea>
+	          	<label for="textarea">Mensaje</label>
+	        </div>
+
+	        <button class = "blue waves-effect waves-light btn-large">
+			 	Enviar
+			</button>
+		</form>
+	</div>
+
+	<!-- BRAND -->
+	<div class="container brand_container">
+		<img src = "img/l-1.svg" width="100" height="70" alt = "Churchill House MX"/>
+		<img src = "img/l-2.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-3.svg" width="60" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-4.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-5.svg" width="60" height="60" alt = "Churchill House MX"/>
+	</div>
+
+	 <footer class="page-footer grey darken-4">
+      <div class="container grey darken-4">
+        <div class="row">
+           
+          <div class="col s10 m3 l2 offset-l2 offset-m1 offset-s1">
+            <h6 class="white-text">Churchill House</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Galería</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Inglaterra</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
+            <h6 class="white-text">Programas</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
+            <h6 class="white-text">Descarga las formas de registro para:</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li> 
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="footer-copyright  grey darken-4">
+        <div class="container">
+        	Churchill House Mexico © 2016. Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+	
+</body>
+</html>
