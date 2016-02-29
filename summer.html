@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verano</title>
+	
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+
+	<!--Scripts-->
+	<script src  = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "js/materialize.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	<script src = "js/script.js"></script>	 
+	<script>
+		$(function(){
+			var grid = $(".img-ico"); 
+			$.each(grid, function(index, value){
+				var img = $(this).find("img").attr("src");  
+				$(this).css("background-image","url("+img+")");
+			});
+		});
+	</script>
+	
+	
+	<!--Stylesheets--> 
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap.min.css">
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap-theme.min.css"> 
+    <link rel = "stylesheet" type="text/css" href = "css/materialize.min.css"/> 
+	<link rel = "stylesheet" type="text/css" href = "css/summer.css"> 
+
+	<!--Import fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather'   rel='stylesheet' type='text/css'>
+</head>
+<body> 
+<!-- NAVBAR -->
+	<nav>
+	    <div class="nav-wrapper"> 
+		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			
+			<div class="wrapper">
+				<div class="logo">
+					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
+					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
+				</div>	    
+		
+			    <ul class = "navbtns right hide-on-med-and-down">
+				    <li><a href="">Nosotros</a></li>
+			        <li class = "active"><a href="">Programas</a></li>
+			        <li><a href="">¿Cómo me inscribo?</a></li> 
+			    </ul>
+			</div>
+
+		    <ul class="side-nav" id="mobile-demo">
+		        <li><a href="">Nosotros</a></li>
+		        <li><a href="">Programas</a></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 
+		    </ul>
+	    </div>
+	</nav> 
+
+	<!--****************************************************-->
+	<!-- <div class = "nav-fixed-lateral" id="cd-vertical-nav" >
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Introducción</span> 
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Lecciones</span> 
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Esparcimiento</span> 
+				</a>
+			</li> 
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Estancia</span> 
+				</a>
+			</li> 
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Alimentación</span> 
+				</a>
+			</li> 
+			<li>
+				<a href="#section6" data-number="6">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Precio</span> 
+				</a>
+			</li>
+		</ul>
+	</div> -->
+
+	
+
+	<section id="section1" class="cd-section">	  	 		
+		<div class = "text">
+ 			<h1>Campamento de Verano en Inglaterra</h1>
+ 			<span>Para estudiantes entre 10 y 17 años de edad</span>
+			<span>Duración: 2 - 3 semanas</span>
+			<p>
+			Una aventura donde el estudio del idioma inglés, el juego, las
+			actividades al aire libre y las excursiones a diferentes ciudades se
+			entretejen para crear experiencias sin precedentes. Implementamos
+			programas que no dejan lugar al aburrimiento mientras desarrollan sus
+			habilidades de comunicación al verse en la necesidad de satisfacer sus
+			inquietudes interpersonales en otros idiomas. Por experiencia sabemos
+			que la convivencia con jóvenes de todas partes del mundo con sus
+			mismas inquietudes crea vínculos inalienables y parteaguas en la
+			percepción del mundo que los rodea.
+			</p>
+		</div> 	
+	</section>
+	 
+	<section id="section2" class="cd-section">
+		<h1>Lecciones de inglés</h1>
+		<p>
+			Lecciones de ingles cinco días a la semana de 9:00 am a 12:30 pm con
+			dos descansos de 15 minutos. El día siguiente a la llegada, se aplica a
+			los estudiantes un examen de ubicación con el objeto de incluirlos en el
+			nivel correspondiente: básico, intermedio, intermedio alto y avanzado.
+		</p>
+		<p>
+			Grupos de máximo 15 estudiantes de diferentes nacionalidades (chinos,
+			italianos, polacos, españoles, turcos, portugueses, rusos y otros).
+		</p>
+		<p>
+			Clases impartidas por profesores británicos acreditados con la
+			certificación CELTA (Certificate in Teaching English to Speakers of Other
+			Languages) por la Universidad de Cambridge.
+		</p>
+		<p>
+			Al terminar el curso, los estudiantes recibirán un certificado de Churchill
+			House con el nivel de inglés adquirido y el total de horas cursadas
+		</p>
+	</section>
+	
+	<section id="section3" class="cd-section">
+		<div class="row">
+
+        	<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-1.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-2.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-3.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-4.jpg">	</div>
+			</div>
+
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-5.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-6.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-7.jpg">	</div> 
+			</div>
+			<div class="col s12 m4 l3">
+				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery-8.jpg">	</div> 
+			</div>
+		</div>
+		
+		<h1 class = "main-text">Esparcimiento</h1>
+		<span class = "main-text">Todas las actividades son supervisadas y dirigidas por el staff</span>
+
+		<div class="cards-container">
+		<div class="row">
+        	<div class="col s12 m8 l5 offset-m2 offset-l1">
+				
+				<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      	<img class="activator" src="img/summer/gallery-8.jpg">
+				    </div>
+				    <div class="card-content">
+				     	<span class="card-title activator">Actividades deportivas<i class="material-icons right">more_vert</i></span>
+				    </div>
+				    <div class="card-reveal">
+				      	<span class="card-title">Actividades deportivas<i class="material-icons right">close</i></span>
+				      	<p>
+				      		Cuatro días a la semana, de 2:00 a 5:30 en dos periodos de 1 hora y media con un
+							descanso de 30 minutos para un refrigerio. Los estudiantes pueden escoger entre
+							tenis, natación, cricket, bádminton, basquetbol, futbol, voleibol, entre otros deportes,
+							o baile, ajedrez, taller de pintura, etc., como actividades alternativas.
+						</p>
+						<p>
+							También pueden participar en deportes como: esquí sobre pistas artificiales,
+							escalada en roca, tiro con arco, caminatas en el bosque y otras actividades
+							extramuros.
+				      	</p>
+				    </div>
+				</div>
+			</div>
+
+			<div class="col s12 m8 l5 offset-m2">
+				<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      	<img class="activator" src="img/summer/gallery-7.jpg">
+				    </div>
+				    <div class="card-content">
+				     	<span class="card-title activator">Actividades culturales y de convivencia<i class="material-icons right">more_vert</i></span>
+				    </div>
+				    <div class="card-reveal">
+				      	<span class="card-title">Actividades culturales y de convivencia<i class="material-icons right">close</i></span>
+				      	<p>
+				      		Todos los días, de 8:00 a 10:00 de la noche: Welcome party (fiesta de bienvenida),
+							Barbecue night (asado al aire libre), Future fashion show (desfile de modas), noche
+							de talentos, rally, fiesta internacional, disco, karaoke, cineclub, concursos y baile
+						</p> 
+				    </div>
+				</div>
+			</div> 
+			
+			<div class="col s12 m8 l5 offset-m2 offset-l1 offset-l3">
+				<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      	<img class="activator" src="img/summer/gallery-2.jpg">
+				    </div>
+				    <div class="card-content">
+				     	<span class="card-title activator">Excursiones y visitas cada semana<i class="material-icons right">more_vert</i></span>
+				    </div>
+				    <div class="card-reveal">
+				      	<span class="card-title">Excursiones y visitas cada semana<i class="material-icons right">close</i></span>
+				      	<ul>
+				      		<li>Excursiones del día completo los fines de semana.</li>
+							<li>Excursiones de medio día una vez entre semana, después de clases.</li>
+							<li>Excursiones opcionales el fin de semana (los jóvenes que no participen contarán con actividades programadas).</li>
+						</ul>
+						<p>
+							Los traslados son en autobús privado acompañados por los guías y un coordinador
+							asignado por Churchill House en cada grupo.
+							Desayuno en las instalaciones y Packed Lunch durante la excursión.
+							Compras: en grupos pequeños, al término de la visita, en tiendas oficiales de
+							souvenirs y tiendas aledañas.
+						</p> 
+				    </div>
+				</div>
+			</div> 
+
+		</div>
+		</div>
+	
+
+	</section>
+
+	<section id="section4" class="cd-section">
+		
+		<h1>Estancia</h1>
+		<h2>Características generales</h2>
+		<ul>
+			<li>Campus residencial cerrado, con vigilancia las 24 horas.</li>
+			<li>Acceso con código de seguridad. En el interior hay un guardia de Churchill House.</li>
+			<li>Alarma de incendio en cada habitación y áreas comunes las 24 horas, simulacros durante las tres semanas.</li>
+			<li>Calefacción central en áreas comunes, habitaciones y baños.</li>
+			<li>Cuartos alfombrados, con camas individuales, closet y escritorios.</li>
+		</ul>
+		<p>
+			Los cuartos se asignan por género y edad en habitaciones individuales, dobles, triples y hasta para 4 personas.
+		</p>
+
+		<h2>Servicios e instalaciones</h2>
+		<ul>
+		 	<li>Servicio de lavandería una vez por semana.</li>
+			<li>Servicio médico: en caso de enfermedad se acudirá al hospital.</li>
+			<li>Áreas comunes con sala de TV, ping-pong, juegos de mesa, etc.</li>
+			<li>Centro de cómputo con acceso a e-mail (sin redes sociales) y a los programas más comunes.</li>
+			<li>Wi-Fi para estudiantes únicamente en los horarios del Campus.</li>
+			<li>Baños y regaderas privadas con agua caliente las 24 horas.</li>
+			<li>Salones de clase espaciosos y bien equipados.</li>
+			<li>Salón de usos múltiples para disco, karaoke, conciertos y eventos sociales.</li>
+			<li>Salón de juegos para fútbol de salón, bádminton, voleibol y basquetbol.</li>
+			<li>Campos deportivos de tenis, futbol, cricket, rugby.</li>
+			<li>Alberca techada de 25 metros con agua caliente.</li>
+			<li>Extensas áreas verdes.</li>
+		</ul>
+		<div class="row plant-row"> 
+			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant-1.jpg">	</div>	 
+			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant-2.jpg">	</div>  
+			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant-3.jpg">	</div> 
+			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant-4.jpg">	</div> 
+		</div>
+	</section>
+
+	<section id="section5" class="cd-section">
+		<h1>Alimentación</h1>
+		
+		<div class="food">
+			<div class="group">
+				<h3>Desayuno</h3>
+				<div class="horario">de 8:00 a 9:00 am</div>			
+			</div>
+			<p>
+				Barra con cereales, frutas, jugos, leche, yogurt, café, té, pan tostado y variedad de
+				mermeladas. Huevos (distinta presentación diaria), jamón, queso, salchichas y papas.
+			</p>
+		</div>
+
+		<div class="food">
+			<div class = "group-2">
+				<div class ="group">
+					<h3>Lunch</h3>
+					<div class="horario"> de 12:30 a 2:00 am</div>
+				</div>
+				<div class="group">
+					<h3>Cena</h3>
+					<div class="horario">de 5:30 a 8:00 pm</div>
+				</div>
+			</div>
+			<p>
+				Menú normal y vegetariano. Barra de ensaladas, platillos variados que incluyen carne,
+				pescado y pollo, acompañados con papas fritas, en puré, horneadas, nuggets, etc.;
+				pastas horneadas y dos postres a escoger (gelatina, helado, roles de canela, etc.).
+				Jugos, café, té.
+			</p>
+		</div>
+		<div class = "tip">TIENDITA en los horarios del campus.</div>
+
+	</section>
+
+	<section id="section6" class="cd-section">
+		<h1>Precio</h1>
+		<div class="price-group-2">
+			<div class="price-group">
+				<div class="price">£1,800</div>
+				<div class="time">2 semanas</div>
+			</div>
+			<div class="price-group">
+				<div class="price">£2,700</div>
+				<div class="time">3 semanas</div>
+			</div>
+		</div>
+
+		<h3>INCLUYE TODOS LOS GASTOS DE LA ESTANCIA:</h3>
+		<ul>
+			<li>Alojamiento residencial (con servicio de lavandería );</li>
+			<li>Alimentos (3 comidas diarias);</li>
+			<li>Clases de inglés (15 horas por semana);</li>
+			<li>Todas las actividades deportivas, talleres y nocturnas;</li>
+			<li>Una excursión de medio día y una de un día completo por semana;</li>
+			<li>Acompañamiento de guías expertos;</li>
+			<li>Seguro de viaje.</li>
+			<li><span>NO INCLUYE BOLETO DE AVIÓN</span></li>
+		</ul> 
+		<div class="descuento">
+			<h3>DESCUENTOS</h3>
+			<span>Invita a un familiar o amigo en edad de 10 a 17 años y recibe un descuento de £100.</span>
+		</div> 
+		<button class = "pink darken-1 waves-effect btn-large">
+			¿Cómo me inscribo?
+		</button>
+	</section>
+	
+
+	<!--****************************************************-->
+
+	<!-- BRAND -->
+	<div class="container brand_container">
+		<img src = "img/l-1.svg" width="100" height="70" alt = "Churchill House MX"/>
+		<img src = "img/l-2.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-3.svg" width="60" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-4.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-5.svg" width="60" height="60" alt = "Churchill House MX"/>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="page-footer grey darken-4">
+      <div class="container grey darken-4">
+        <div class="row">
+           
+          <div class="col s10 m3 l2 offset-l2 offset-m1 offset-s1">
+            <h6 class="white-text">Churchill House</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Galería</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Inglaterra</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
+            <h6 class="white-text">Programas</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
+            <h6 class="white-text">Descarga las formas de registro para:</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li> 
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="footer-copyright  grey darken-4">
+        <div class="container">
+        	Churchill House Mexico © 2016. Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+</html>
