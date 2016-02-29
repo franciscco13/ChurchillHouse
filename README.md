@@ -7,6 +7,6 @@ index.html acabado.
 
 v.1.3
 -------------------
-Agregado aboutus.html (version final)
-Agregado programs.html (version final)
+Agregado aboutus.html (version final) <br>
+Agregado programs.html (version final) <br>
 Agregado summer.html (version beta)
