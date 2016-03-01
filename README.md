@@ -16,3 +16,7 @@ v.1.35
 Agregado summer.html (version semi-final)<br>
 Agregado links entre páginas<br>
 Corregido detalles de responsividad
+
+v.1.38
+-------------------
+Agregadas fotos finales del proyecto
