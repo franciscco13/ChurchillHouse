@@ -37,15 +37,15 @@
 				</div>	    
 		
 			    <ul class = "navbtns right hide-on-med-and-down">
-				    <li><a href="">Nosotros</a></li>
-			        <li><a href="">Programas</a></li>
+				    <li><a href="./aboutus.html">Nosotros</a></li>
+			        <li><a href="./programs.html">Programas</a></li>
 			        <li><a href="">¿Cómo me inscribo?</a></li> 
 			    </ul>
 			</div>
 
 		    <ul class="side-nav" id="mobile-demo">
-		        <li><a href="">Nosotros</a></li>
-		        <li><a href="">Programas</a></li>
+		        <li><a href="./aboutus.html">Nosotros</a></li>
+		        <li><a href="./programs.html">Programas</a></li>
 		        <li><a href="">¿Cómo me inscribo?</a></li> 
 		    </ul>
 	    </div>
@@ -227,7 +227,7 @@
           <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
             <h6 class="white-text">Programas</h6>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="./summer.html">Campamento de Verano</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
@@ -252,6 +252,18 @@
         </div>
       </div>
     </footer>
+
+    <script>
+    	$(function(){
+	    	/** Agregar imagenes al carrousel del index **/
+			var slides = $('.carousel').find('.item');
+			$.each(slides, function(key, value){
+				var src = $(this).attr("src");
+				$(this).css("background-image", "url("+src+")");
+			});
+			$('.carousel').carousel();
+		});
+    </script>
 	
 </body>
 </html>

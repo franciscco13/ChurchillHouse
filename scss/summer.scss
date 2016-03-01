@@ -3,22 +3,32 @@ $compl : #ffeb3b;
 
 @import 'css';  
 
-section#section1{ 
+section#section0{ 
 	background-size: cover;
 	background-position: center center;
 	background-image: url("../img/summer/cover.jpg");
 	color: white; 
 	padding-bottom: 0; 
+	height: auto;
+	max-height: auto; 
  
-	.text{
-		height: 100%;
-		z-index: 5;
+	.cover{
+		position: absolute;
 		top: 0;
-		position: absolute; 
-		padding: 100px 10%;				
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+	.text{		
+		position: relative;
+		z-index: 2;
+		top: 0; 
+		padding: 100px 10% 50px 10%;				
 		display: block;  
 		margin: 0;
-		background-color: rgba(0,0,0,0.6);
 		
 		h1, span, p{
 			max-width: 600px;
@@ -35,16 +45,67 @@ section#section1{
 			display: block;
 			font-size: 20px;
 			text-align: center; }
-
-		p{
-			text-align: center;
-			margin: 20px auto;
-			padding: 30px;
-			font-size: 14px;
-			border-radius: 10px;
-			background-color: white;
-			color: #333;}
 	}  
+
+	.btn-floating{
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		z-index: 20;
+	}
+
+	.menu-top{ 		 
+		color: white;
+		z-index: 5; 
+		display: -webkit-flex; 
+		display: -ms-flexbox; 
+		display: flex;
+		margin: 0 auto;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center; 
+		position: relative; 
+		width: auto!important; 
+
+		.item-wrapper{
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center; 
+			-webkit-flex-wrap: wrap; 
+			    -ms-flex-wrap: wrap; 
+			        flex-wrap: wrap;
+			width: auto; 			
+			margin: 20px;
+
+			.item{
+				width: auto!important;
+				padding: 15px 30px;
+				cursor: pointer;
+				color: white;
+				border: solid 2px white;  
+				text-transform: uppercase;
+				transition: 0.3s; 
+
+				&:hover{
+					background-color: white;
+					color: #333; } 
+			}
+		}		
+	}
+}
+
+section#section1{  
+	min-height: auto!important;
+
+	p{
+		font-family: Merriweather;
+		text-align: center;
+		padding: 40px;
+		margin: 0 auto;
+		max-width: 600px;}
 }
 
 section#section2{
@@ -78,10 +139,12 @@ section#section2{
 		max-width: 700px;
 		font-weight: 300;
 		text-align: center;
-		margin-bottom: 30px;}
+		font-size: 30px;
+		text-transform: uppercase;
+		margin: 30px;}
 
 	p{
-		padding: 10px;	}
+		padding: 10px 30px;	}
 }
 
 section#section3{
@@ -106,20 +169,25 @@ section#section3{
 		font-size: 30px;} 
 
 	.cards-container{		
-		margin: 50px 0;
+		margin: 50px 0;	}
 
+	@media only screen and (max-width: 992px){
+		.col:nth-child(7), .col:nth-child(8){
+			display: none;}
 	}
 
+	@media only screen and (max-width: 600px){
+		padding: 60px 0% 60px 0%; 
+		.col:nth-child(4), .col:nth-child(5), .col:nth-child(6){
+			display: none;}
+	}
 
-
-	.img-ico{
-		margin: 10px; 
+	.img-ico {
+		margin: 10px 0; 
 		height: 250px;
 		overflow: hidden;	 
 		background-size: cover;
-		background-position: center center;
-
-		
+		background-position: center center;		
 		
 		img{
 			float: right;
@@ -128,8 +196,7 @@ section#section3{
 			opacity: 0;
 
 			&.active{
-				opacity: 1;
-			}
+				opacity: 1;	}
 		}
 	} 
 }
@@ -138,7 +205,7 @@ section#section3{
 section#section4{
 
 	margin-top: -50px;
-	padding: 50px 0 0px 0;
+	padding: 50px 40px 0px 40px;
 	background-color: #eee;
 
 	h1, h2, p, ul{
@@ -211,6 +278,7 @@ section#section4{
 section#section5{
 
 	background-color: #fafafa;
+	padding: 40px;
 
 	h1, h3, h2, p, ul, .horario{
 		max-width: 500px;
@@ -229,21 +297,31 @@ section#section5{
 	h3{
 		color: $accent;
 		font-size: 20px; }
+	p{
+		text-align: center; } 
 
 	.tip{
-		font-weight: 700;
-		color: white;
+		font-weight: 700; 
 		margin: 30px auto; 
 		text-align: center;}
 	
 	.food{
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.group-2{
+		margin: 20px;
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;	
@@ -253,23 +331,25 @@ section#section5{
 		-webkit-align-items: center;	
 		    -ms-flex-align: center;	
 		        align-items: center;
-
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap; 
 	}
 
 	.group{ 
 
-		padding: 20px;
+		padding: 15px 40px;
 		border-radius: 60px;
-		width: auto;
-		border: solid 1px $accent;
-		width: 300px;
-		margin: 30px;
+		width: auto;  
+		background-color: #eee;
+		margin: 10px;
 	}
 
 }
 
 section#section6{
 	background-color: #eee;
+	padding: 40px;
 
 	h1, h3, .descuento{
 		max-width: 600px;
@@ -289,8 +369,7 @@ section#section6{
 		font-weight:  700;	}
 
 	ul{
-		max-width: 500px;
-		padding: 30px;
+		max-width: 500px; 
 		margin: 0 auto;		
 		margin-bottom: 40px;}
 	
@@ -310,8 +389,12 @@ section#section6{
 		width: auto; }
 
 	.price-group-2{
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 
 		.price-group{
 			width: auto;

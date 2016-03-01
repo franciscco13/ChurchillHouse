@@ -44,6 +44,7 @@ nav {
     padding: 0 10%;
     width: auto !important; }
     .nav-wrapper .wrapper .logo {
+      cursor: pointer;
       width: 250px;
       padding: 0 !important;
       margin: 0 !important;

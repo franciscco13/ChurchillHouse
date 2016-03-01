@@ -59,6 +59,7 @@ nav{
 	width: auto!important;
 
 	.logo{
+		cursor: pointer;
 		width: 250px;  
 		padding: 0!important;
 		margin: 0!important;
@@ -85,7 +86,7 @@ nav{
 				height: 40px;				
 				padding: 0px;
 				border-radius: 0;
-    box-shadow: none;
+    			box-shadow: none;
 			}
 		}
 

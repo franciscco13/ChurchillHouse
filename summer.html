@@ -11,6 +11,7 @@
 	<script src = "js/materialize.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
 	<script src = "js/script.js"></script>	 
+	<script src = "js/menu.js"></script>
 	<script>
 		$(function(){
 			var grid = $(".img-ico"); 
@@ -45,15 +46,15 @@
 				</div>	    
 		
 			    <ul class = "navbtns right hide-on-med-and-down">
-				    <li><a href="">Nosotros</a></li>
-			        <li class = "active"><a href="">Programas</a></li>
+				    <li><a href="./aboutus.html">Nosotros</a></li>
+			        <li><a href="./programs.html">Programas</a></li>
 			        <li><a href="">¿Cómo me inscribo?</a></li> 
 			    </ul>
 			</div>
 
 		    <ul class="side-nav" id="mobile-demo">
-		        <li><a href="">Nosotros</a></li>
-		        <li><a href="">Programas</a></li>
+		        <li><a href="./aboutus.html">Nosotros</a></li>
+		        <li><a href="./programs.html">Programas</a></li>
 		        <li><a href="">¿Cómo me inscribo?</a></li> 
 		    </ul>
 	    </div>
@@ -103,12 +104,27 @@
 
 	
 
-	<section id="section1" class="cd-section">	  	 		
+	<section id="section0" class="cd-section">	  	 		
+		<div class="cover"></div>
 		<div class = "text">
  			<h1>Campamento de Verano en Inglaterra</h1>
  			<span>Para estudiantes entre 10 y 17 años de edad</span>
 			<span>Duración: 2 - 3 semanas</span>
-			<p>
+		</div> 
+		<a class="btn-floating btn-large waves-effect waves-light z-depth-3 pink" id = "goto-top"><i class="material-icons">navigation</i></a>
+		<div class="menu-top"> 
+			<div class="item-wrapper">
+				<div class="item" id="item-1" section = "2">Lecciones</div>
+				<div class="item" id="item-2" section = "3">Esparcimiento</div>
+				<div class="item" id="item-3" section = "4">Estancia</div>
+				<div class="item" id="item-4" section = "5">Alimentación</div>
+				<div class="item" id="item-5" section = "6">Precio</div> 
+			</div>
+		</div>	
+	</section>
+
+	<section id="section1" class="cd-section">
+		<p>
 			Una aventura donde el estudio del idioma inglés, el juego, las
 			actividades al aire libre y las excursiones a diferentes ciudades se
 			entretejen para crear experiencias sin precedentes. Implementamos
@@ -118,8 +134,8 @@
 			que la convivencia con jóvenes de todas partes del mundo con sus
 			mismas inquietudes crea vínculos inalienables y parteaguas en la
 			percepción del mundo que los rodea.
-			</p>
-		</div> 	
+		</p>
+		
 	</section>
 	 
 	<section id="section2" class="cd-section">
@@ -217,9 +233,20 @@
 				    <div class="card-reveal">
 				      	<span class="card-title">Actividades culturales y de convivencia<i class="material-icons right">close</i></span>
 				      	<p>
-				      		Todos los días, de 8:00 a 10:00 de la noche: Welcome party (fiesta de bienvenida),
-							Barbecue night (asado al aire libre), Future fashion show (desfile de modas), noche
-							de talentos, rally, fiesta internacional, disco, karaoke, cineclub, concursos y baile
+				      		Todos los días, de 8:00 a 10:00 de la noche:
+				      		<ul>
+				      			<li>Welcome party (fiesta de bienvenida)</li>
+				      			<li>Barbecue night (asado al aire libre)</li>
+					      		<li>Future fashion show (desfile de modas)</li>
+					      		<li>Noche de talentos</li>
+					      		<li>rally</li>
+					      		<li>fiesta internacional</li>
+					      		<li>disco</li>
+					      		<li>karaoke</li>
+					      		<li>cineclub</li>
+					      		<li>concursos </li>
+					      		<li>baile</li>
+							</ul>
 						</p> 
 				    </div>
 				</div>
@@ -299,14 +326,17 @@
 		<h1>Alimentación</h1>
 		
 		<div class="food">
-			<div class="group">
-				<h3>Desayuno</h3>
-				<div class="horario">de 8:00 a 9:00 am</div>			
+			<div class = "group-2">
+				<div class="group">
+					<h3>Desayuno</h3>
+					<div class="horario">de 8:00 a 9:00 am</div>			
+				</div>
 			</div>
-			<p>
-				Barra con cereales, frutas, jugos, leche, yogurt, café, té, pan tostado y variedad de
-				mermeladas. Huevos (distinta presentación diaria), jamón, queso, salchichas y papas.
-			</p>
+				<p>
+					Barra con cereales, frutas, jugos, leche, yogurt, café, té, pan tostado y variedad de
+					mermeladas. Huevos (distinta presentación diaria), jamón, queso, salchichas y papas.
+				</p>
+
 		</div>
 
 		<div class="food">
@@ -368,7 +398,7 @@
 	<!--****************************************************-->
 
 	<!-- BRAND -->
-	<div class="container brand_container">
+	<div class="container brand_container" id ="brand-section">
 		<img src = "img/l-1.svg" width="100" height="70" alt = "Churchill House MX"/>
 		<img src = "img/l-2.svg" width="100" height="60" alt = "Churchill House MX"/>
 		<img src = "img/l-3.svg" width="60" height="60" alt = "Churchill House MX"/>
@@ -378,7 +408,7 @@
 
 
 	<!-- FOOTER -->
-	<footer class="page-footer grey darken-4">
+	<footer class="page-footer grey darken-4" id ="footer-section">
       <div class="container grey darken-4">
         <div class="row">
            

@@ -1,12 +1,10 @@
 $(function(){ 
 
-	$('.carousel').carousel();
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
 
-	var slides = $('.carousel').find('.item');
-	$.each(slides, function(key, value){
-		var src = $(this).attr("src");
-		$(this).css("background-image", "url("+src+")");
+	/** Redireccionar al index si se da clic en logo  **/
+	$(".nav-wrapper .logo").on("click", function(){ 
+		window.location.href = "./index.html";
 	});
 });

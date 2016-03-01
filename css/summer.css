@@ -44,6 +44,7 @@ nav {
     padding: 0 10%;
     width: auto !important; }
     .nav-wrapper .wrapper .logo {
+      cursor: pointer;
       width: 250px;
       padding: 0 !important;
       margin: 0 !important;
@@ -489,41 +490,90 @@ footer {
 .parallax-container {
   height: 400px; }
 
-section#section1 {
+section#section0 {
   background-size: cover;
   background-position: center center;
   background-image: url("../img/summer/cover.jpg");
   color: white;
-  padding-bottom: 0; }
-  section#section1 .text {
-    height: 100%;
-    z-index: 5;
-    top: 0;
+  padding-bottom: 0;
+  height: auto;
+  max-height: auto; }
+  section#section0 .cover {
     position: absolute;
-    padding: 100px 10%;
-    display: block;
-    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.6); }
-    section#section1 .text h1, section#section1 .text span, section#section1 .text p {
+  section#section0 .text {
+    position: relative;
+    z-index: 2;
+    top: 0;
+    padding: 100px 10% 50px 10%;
+    display: block;
+    margin: 0; }
+    section#section0 .text h1, section#section0 .text span, section#section0 .text p {
       max-width: 600px;
       margin: 0 auto; }
-    section#section1 .text h1 {
+    section#section0 .text h1 {
       font-size: 40px;
       padding: 20px;
       text-align: center;
       font-weight: 700; }
-    section#section1 .text span {
+    section#section0 .text span {
       display: block;
       font-size: 20px;
       text-align: center; }
-    section#section1 .text p {
-      text-align: center;
-      margin: 20px auto;
-      padding: 30px;
-      font-size: 14px;
-      border-radius: 10px;
-      background-color: white;
-      color: #333; }
+  section#section0 .btn-floating {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 20; }
+  section#section0 .menu-top {
+    color: white;
+    z-index: 5;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    width: auto !important; }
+    section#section0 .menu-top .item-wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: auto;
+      margin: 20px; }
+      section#section0 .menu-top .item-wrapper .item {
+        width: auto !important;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: white;
+        border: solid 2px white;
+        text-transform: uppercase;
+        transition: 0.3s; }
+        section#section0 .menu-top .item-wrapper .item:hover {
+          background-color: white;
+          color: #333; }
+
+section#section1 {
+  min-height: auto !important; }
+  section#section1 p {
+    font-family: Merriweather;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 600px; }
 
 section#section2 {
   background: #27094a;
@@ -550,9 +600,11 @@ section#section2 {
     max-width: 700px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 30px; }
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 30px; }
   section#section2 p {
-    padding: 10px; }
+    padding: 10px 30px; }
 
 section#section3 {
   background-color: #ddd;
@@ -573,8 +625,16 @@ section#section3 {
     font-size: 30px; }
   section#section3 .cards-container {
     margin: 50px 0; }
+  @media only screen and (max-width: 992px) {
+    section#section3 .col:nth-child(7), section#section3 .col:nth-child(8) {
+      display: none; } }
+  @media only screen and (max-width: 600px) {
+    section#section3 {
+      padding: 60px 0% 60px 0%; }
+      section#section3 .col:nth-child(4), section#section3 .col:nth-child(5), section#section3 .col:nth-child(6) {
+        display: none; } }
   section#section3 .img-ico {
-    margin: 10px;
+    margin: 10px 0;
     height: 250px;
     overflow: hidden;
     background-size: cover;
@@ -589,7 +649,7 @@ section#section3 {
 
 section#section4 {
   margin-top: -50px;
-  padding: 50px 0 0px 0;
+  padding: 50px 40px 0px 40px;
   background-color: #eee; }
   section#section4 h1, section#section4 h2, section#section4 p, section#section4 ul {
     max-width: 500px;
@@ -642,7 +702,8 @@ section#section4 {
   padding: 2em 0; }
 
 section#section5 {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  padding: 40px; }
   section#section5 h1, section#section5 h3, section#section5 h2, section#section5 p, section#section5 ul, section#section5 .horario {
     max-width: 500px;
     margin: 0 auto; }
@@ -657,17 +718,27 @@ section#section5 {
   section#section5 h3 {
     color: #eD0286;
     font-size: 20px; }
+  section#section5 p {
+    text-align: center; }
   section#section5 .tip {
     font-weight: 700;
-    color: white;
     margin: 30px auto;
     text-align: center; }
   section#section5 .food {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
   section#section5 .group-2 {
+    margin: 20px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -676,17 +747,20 @@ section#section5 {
     justify-content: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   section#section5 .group {
-    padding: 20px;
+    padding: 15px 40px;
     border-radius: 60px;
     width: auto;
-    border: solid 1px #eD0286;
-    width: 300px;
-    margin: 30px; }
+    background-color: #eee;
+    margin: 10px; }
 
 section#section6 {
-  background-color: #eee; }
+  background-color: #eee;
+  padding: 40px; }
   section#section6 h1, section#section6 h3, section#section6 .descuento {
     max-width: 600px;
     text-align: center;
@@ -703,7 +777,6 @@ section#section6 {
     font-weight: 700; }
   section#section6 ul {
     max-width: 500px;
-    padding: 30px;
     margin: 0 auto;
     margin-bottom: 40px; }
   section#section6 li {
@@ -719,7 +792,11 @@ section#section6 {
     margin: 20px auto;
     width: auto; }
   section#section6 .price-group-2 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     section#section6 .price-group-2 .price-group {
       width: auto;
