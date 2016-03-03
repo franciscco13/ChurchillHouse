@@ -9,10 +9,10 @@ Error: Undefined variable: "$accent".
 35: .nav-wrapper{
 36: 	background-color: $accent;
 37: 
-38: 
-39: 	a, a:hover, a:active{
-40: 		text-decoration: none;
-41: 		color: white;	}
+38: 	a, a:hover, a:active{
+39: 		text-decoration: none;
+40: 		color: white;	}
+41: 	
 
 Backtrace:
 ./css.scss:36
@@ -67,4 +67,4 @@ C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$accent\".\A         on line 36 of ./css.scss\A \A 31: 			}\A 32: 		}\A 33: 	}\A 34: }\A 35: .nav-wrapper{\A 36: 	background-color: $accent;\A 37: \A 38: \A 39: 	a, a:hover, a:active{\A 40: 		text-decoration: none;\A 41: 		color: white;	}"; }
+  content: "Error: Undefined variable: \"$accent\".\A         on line 36 of ./css.scss\A \A 31: 			}\A 32: 		}\A 33: 	}\A 34: }\A 35: .nav-wrapper{\A 36: 	background-color: $accent;\A 37: \A 38: 	a, a:hover, a:active{\A 39: 		text-decoration: none;\A 40: 		color: white;	}\A 41: 	"; }

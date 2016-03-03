@@ -25,7 +25,7 @@
 </head>
 <body> 
 	
-	<!-- NAVBAR -->
+<!-- NAVBAR -->
 	<nav>
 	    <div class="nav-wrapper"> 
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -34,22 +34,51 @@
 				<div class="logo">
 					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
 					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
-				</div>	    
-		
+				</div>	  
+
+
+				<!-- Dropdown Structure -->
+				<ul id="aboutus" class="dropdown-content">
+				  <li><a href="./aboutus.html">Acerca de</a></li>
+				  <li><a href="./contacto.html">Contacto</a></li> 
+				</ul>  
+
+				<ul id="programs" class="dropdown-content">
+				  <li  class = "active"><a href="./programs.html">Ver todos</a></li>
+				  <li><a href="./summer.html">Verano</a></li> 
+				  <li><a href="./harrogate.html">Harrogate</a></li> 
+				</ul>  
+				
+				<!--Menu en navbar-->
 			    <ul class = "navbtns right hide-on-med-and-down">
-				    <li><a href="./aboutus.html">Nosotros</a></li>
-			       	<li class = "active"><a>Programas</a></li>
-			        <li><a href="">¿Cómo me inscribo?</a></li> 
+				   <li><a class="dropdown-button" href="./aboutus.html" data-activates="aboutus">
+			        	Nosotros <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li class = "active"><a class="dropdown-button" href="./aboutus.html" data-activates="programs">
+			        	Programas <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li><a href="">¿Cómo me inscribo?</a></li> 			        
 			    </ul>
 			</div>
 
+			<!--Mobile menu -->
 		    <ul class="side-nav" id="mobile-demo">
+		    	<li><a href="./index.html">Inicio</a></li>
+		    	<li class="divider"></li>
 		        <li><a href="./aboutus.html">Nosotros</a></li>
-			    <li class = "active"><a>Programas</a></li>
-			    <li><a href="">¿Cómo me inscribo?</a></li> 
+		        <li><a href="./contact.html">Contacto</a></li>
+		        <li class="divider"></li>
+		        <li class = "active"><a href="./programs.html">Todos los Programas</a></li>
+		        <li><a href="./summer.html">Verano</a></li>
+		        <li><a href="./Harrogate.html">Harrogate</a></li>
+		        <li class="divider"></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 
 		    </ul>
 	    </div>
 	</nav> 
+
+
+
 
 	<div class="programs_section">
 		<h1>PROGRAMAS EN INGLATERRA</h1>
@@ -92,9 +121,11 @@
 						<li>Seguro de viaje</li>
 						<li><span>NO INCLUYE BOLETO DE AVIÓN</span></li>
 					</ul>
-					<button class = "green lighten-1 waves-light waves-effect btn-large z-depth-0">
-		 				<a class = "white-text" href = "./summer.html">Ver detalles</a>
-					</button>
+					<a class = "white-text" href = "./summer.html">
+						<button class = "green lighten-1 waves-light waves-effect btn-large z-depth-0">
+			 				Ver detalles
+						</button>
+					</a>
             	</div>         
           	</div> 
 
@@ -146,9 +177,9 @@
             	<div class="card-content green lighten-5">
             		<table class = "centered">
             			<tr>
-							<th>CURSO DE INGLÉS GENERAL</th>
-							<th>CURSO DE INGLÉS INTENSIVO</th>
-							<th>CURSO DE PREPARACIÓN PARA EXAMEN IELTS</th>
+							<th>INGLÉS GENERAL</th>
+							<th>INGLÉS INTENSIVO</th>
+							<th>PREPARACIÓN PARA EXAMEN IELTS</th>
             			</tr>
             			<tr>
 							<td>Adquiere una sólida comprensión del inglés y seguridad al hablar</td>
@@ -156,39 +187,45 @@
 							<td>Prepárate para presentar exitosamente el examen de inglés más popular en la educación superior</td>
             			</tr>
             			<tr>
-							<td><i>De 1 a 4 semanas</i><span>£152*</span></td>
-							<td><i>De 1 a 4 semanas</i><span>£207*</span></td>
-							<td><i>De 1 a 4 semanas</i><span>£207*</span></td>
+							<td><i>De 1 a 4 semanas</i><span>£152</span></td>
+							<td><i>De 1 a 4 semanas</i><span>£207</span></td>
+							<td><i>De 1 a 4 semanas</i><span>£207</span></td>
             			</tr>
             			<tr>
-							<td><i>De 5 a 12 semanas</i><span>£133*</span></td>
-							<td><i>De 5 a 12 semanas</i><span>£180*</span></td>
-							<td><i>De 5 a 12 semanas</i><span>£180*</span></td>
+							<td><i>De 5 a 12 semanas</i><span>£133</span></td>
+							<td><i>De 5 a 12 semanas</i><span>£180</span></td>
+							<td><i>De 5 a 12 semanas</i><span>£180</span></td>
             			</tr>
             			<tr>
-							<td><i>De 13 a 24 semanas</i><span>£110*</span></td>
-							<td><i>De 13 a 24 semanas</i><span>£164*</span></td>
-							<td><i>De 13 a 24 semanas</i><span>£164*</span></td>
+							<td><i>De 13 a 24 semanas</i><span>£110</span></td>
+							<td><i>De 13 a 24 semanas</i><span>£164</span></td>
+							<td><i>De 13 a 24 semanas</i><span>£164</span></td>
             			</tr>
             			<tr>
 							<td>
+								<a class = "white-text" href = "./harrogate.html">
 								<button class = "green lighten-1 waves-light waves-effect btn z-depth-0">
-		 							Ver más
+		 							Más
 								</button>
+								</a>
 							</td>
 							<td>
+								<a class = "white-text" href = "./harrogate.html">
 								<button class = "green lighten-1 waves-light waves-effect btn z-depth-0">
-		 							Ver más
+		 							Más
 								</button>
+								</a>
 							</td>
 							<td>
+								<a class = "white-text" href = "./harrogate.html">
 								<button class = "green lighten-1 waves-light waves-effect btn z-depth-0">
-		 							Ver más
+		 							Más
 								</button>
+								</a>
 							</td>
             			</tr>
             		</table>
-            		<div class = "note">* Precio por semana</div>
+            		<div class = "note">Precio por semana</div>
             	</div>
         	</div> 
  		</div>

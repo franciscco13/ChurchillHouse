@@ -86,12 +86,28 @@ nav {
           margin: 0 auto;
           width: 100%;
           margin-right: -100px; } }
+  .nav-wrapper .dropdown-content {
+    z-index: 20;
+    opacity: 1;
+    margin-top: 61px;
+    position: absolute;
+    width: inherit; }
+    .nav-wrapper .dropdown-content li a {
+      color: black; }
+      .nav-wrapper .dropdown-content li a:hover {
+        color: black;
+        background-color: transparent !important; }
   .nav-wrapper .navbtns {
     width: auto; }
     .nav-wrapper .navbtns li {
       width: auto;
       font-family: "Roboto";
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      position: relative; }
+      .nav-wrapper .navbtns li i {
+        width: auto;
+        padding: 0;
+        margin: 0; }
       .nav-wrapper .navbtns li a {
         font-size: 14px !important;
         padding: 0 30px; }
@@ -369,7 +385,7 @@ footer {
   margin-top: -10px;
   padding-top: 30px; }
   .programs_section h1, .programs_section p {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px 10px 20px 10px;
     text-align: center; }
@@ -440,7 +456,8 @@ footer {
       .programs_section .row .card .card-title {
         z-index: 10; }
       .programs_section .row .card table td, .programs_section .row .card table th {
-        width: 20% !important; }
+        padding: 15px 1px;
+        width: 33% !important; }
       .programs_section .row .card table th {
         color: #eD0286;
         text-align: center;
@@ -451,10 +468,13 @@ footer {
         font-style: normal; }
       .programs_section .row .card table td span {
         font-weight: 300;
-        font-size: 30px;
+        font-size: 25px;
         display: block; }
-      .programs_section .row .card table td button:hover, .programs_section .row .card table td button:visited, .programs_section .row .card table td button:active, .programs_section .row .card table td button:link {
-        color: white !important; }
+      .programs_section .row .card table td button {
+        padding: 0 !important;
+        margin: 0; }
+        .programs_section .row .card table td button:hover, .programs_section .row .card table td button:visited, .programs_section .row .card table td button:active, .programs_section .row .card table td button:link {
+          color: white !important; }
   .programs_section .card-content {
     text-align: center;
     height: auto; }
@@ -490,14 +510,59 @@ footer {
 .parallax-container {
   height: 400px; }
 
+/******************************/
+section .text {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  padding: 100px 10% 50px 10%;
+  display: block;
+  margin: 0; }
+section h1, section h2, section span, section p, section ul {
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 0 auto; }
+section h1 {
+  color: #eD0286;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center; }
+section h2 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #eD0286; }
+section span {
+  display: block;
+  font-size: 15px;
+  padding: 0 40px;
+  text-align: center; }
+section li {
+  list-style: disc outside none;
+  display: list-item;
+  max-width: 90%;
+  margin-top: 5px;
+  margin-left: 2em; }
+section button {
+  display: block !important;
+  margin: 20px auto;
+  width: auto; }
+
+/******************************/
 section#section0 {
   background-size: cover;
   background-position: center center;
   background-image: url("../img/summer/cover.jpg");
   color: white;
-  padding-bottom: 0;
+  position: relative;
   height: auto;
   max-height: auto; }
+  section#section0 h1 {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 40px;
+    color: white; }
   section#section0 .cover {
     position: absolute;
     top: 0;
@@ -506,25 +571,6 @@ section#section0 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
-  section#section0 .text {
-    position: relative;
-    z-index: 2;
-    top: 0;
-    padding: 100px 10% 50px 10%;
-    display: block;
-    margin: 0; }
-    section#section0 .text h1, section#section0 .text span, section#section0 .text p {
-      max-width: 600px;
-      margin: 0 auto; }
-    section#section0 .text h1 {
-      font-size: 40px;
-      padding: 20px;
-      text-align: center;
-      font-weight: 700; }
-    section#section0 .text span {
-      display: block;
-      font-size: 20px;
-      text-align: center; }
   section#section0 .btn-floating {
     position: fixed;
     bottom: 40px;
@@ -566,63 +612,26 @@ section#section0 {
           background-color: white;
           color: #333; }
 
+/*********************/
 section#section1 {
-  min-height: auto !important; }
-  section#section1 p {
-    font-family: Merriweather;
-    text-align: center;
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 600px; }
-
-section#section2 {
+  min-height: auto !important;
   background: #27094a;
   background: -webkit-gradient(left top, right bottom, color-stop(0%, #27094a), color-stop(100%, #a80043));
   background: linear-gradient(135deg, #27094a 0%, #a80043 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27094a', endColorstr='#a80043', GradientType=1 );
-  color: white;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  section#section2 h1, section#section2 p {
-    max-width: 600px;
-    margin: 0 auto; }
-  section#section2 h1 {
-    max-width: 700px;
-    font-weight: 300;
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 30px; }
-  section#section2 p {
-    padding: 10px 30px; }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27094a', endColorstr='#a80043', GradientType=1 ); }
+  section#section1 p {
+    text-align: justify;
+    color: white; }
 
+/******************************/
+section#section2 {
+  min-height: auto !important;
+  padding: 40px; }
+
+/******************************/
 section#section3 {
   background-color: #ddd;
   padding: 60px 10% 60px 10%; }
-  section#section3 .main-text {
-    color: #333;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    display: block; }
-  section#section3 h1 {
-    display: block;
-    color: #eD0286 !important;
-    text-transform: uppercase;
-    font-weight: 300;
-    padding-top: 50px;
-    margin: 10px auto;
-    font-size: 30px; }
   section#section3 .cards-container {
     margin: 50px 0; }
   @media only screen and (max-width: 992px) {
@@ -647,34 +656,10 @@ section#section3 {
       section#section3 .img-ico img.active {
         opacity: 1; }
 
+/******************************/
 section#section4 {
-  margin-top: -50px;
   padding: 50px 40px 0px 40px;
   background-color: #eee; }
-  section#section4 h1, section#section4 h2, section#section4 p, section#section4 ul {
-    max-width: 500px;
-    margin: 0 auto; }
-  section#section4 h1, section#section4 h2 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #eD0286; }
-  section#section4 h1 {
-    font-weight: 300;
-    margin-top: 50px;
-    font-size: 30px; }
-  section#section4 h2 {
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 16px; }
-  section#section4 p {
-    margin: 15px auto 50px auto; }
-  section#section4 li {
-    list-style: disc outside none;
-    display: list-item;
-    max-width: 90%;
-    margin-top: 5px;
-    margin-left: 2em; }
   section#section4 .plant-row {
     margin: 50px 0 0px 0;
     width: 100%;
@@ -701,25 +686,14 @@ section#section4 {
   position: relative;
   padding: 2em 0; }
 
+/******************************/
 section#section5 {
   background-color: #fafafa;
   padding: 40px; }
-  section#section5 h1, section#section5 h3, section#section5 h2, section#section5 p, section#section5 ul, section#section5 .horario {
+  section#section5 .horario {
     max-width: 500px;
+    text-align: center;
     margin: 0 auto; }
-  section#section5 h1, section#section5 h3, section#section5 .horario {
-    text-align: center; }
-  section#section5 h1 {
-    margin-top: 50px;
-    font-size: 30px;
-    color: #eD0286;
-    text-transform: uppercase;
-    font-weight: 300; }
-  section#section5 h3 {
-    color: #eD0286;
-    font-size: 20px; }
-  section#section5 p {
-    text-align: center; }
   section#section5 .tip {
     font-weight: 700;
     margin: 30px auto;
@@ -758,39 +732,17 @@ section#section5 {
     background-color: #eee;
     margin: 10px; }
 
+/******************************/
 section#section6 {
   background-color: #eee;
   padding: 40px; }
-  section#section6 h1, section#section6 h3, section#section6 .descuento {
+  section#section6 ul span {
+    color: #eD0286;
+    padding: 20px; }
+  section#section6 .descuento {
     max-width: 600px;
     text-align: center;
     margin: 0 auto; }
-  section#section6 h1 {
-    margin-top: 40px;
-    color: #eD0286;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase; }
-  section#section6 h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 700; }
-  section#section6 ul {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 40px; }
-  section#section6 li {
-    list-style: disc outside none;
-    display: list-item;
-    max-width: 90%;
-    margin-top: 5px;
-    margin-left: 2em; }
-    section#section6 li span {
-      color: #eD0286; }
-  section#section6 button {
-    display: block;
-    margin: 20px auto;
-    width: auto; }
   section#section6 .price-group-2 {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -808,6 +760,7 @@ section#section6 {
       section#section6 .price-group-2 .price-group .time {
         color: #eD0286; }
 
+/******************************/
 .card {
   overflow: hidden;
   border-radius: 2px; }
@@ -820,8 +773,14 @@ section#section6 {
   .card .card-content, .card .card-reveal {
     overflow: hidden; }
     .card .card-content i, .card .card-reveal i {
-      position: absolute;
-      left: 85% !important; }
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px;
+      margin: 10px;
+      text-transform: uppercase;
+      color: #eD0286 !important; }
     .card .card-content p, .card .card-reveal p {
       margin-top: 10px; }
     .card .card-content .card-title, .card .card-reveal .card-title {
@@ -830,7 +789,5 @@ section#section6 {
       font-size: 16px; }
   .card .card-reveal {
     overflow-y: auto; }
-    .card .card-reveal .card-title {
-      color: #eD0286; }
 
 /*# sourceMappingURL=summer.css.map */

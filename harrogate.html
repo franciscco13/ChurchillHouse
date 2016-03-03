@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harrogate</title>
+	
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+
+	<!--Scripts-->
+	<script src  = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "js/materialize.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	<script src = "js/script.js"></script>	 
+	<script src = "js/menu.js"></script>
+	<script>
+		$(function(){
+			var grid = $(".img-ico"); 
+			$.each(grid, function(index, value){
+				var img = $(this).find("img").attr("src");  
+				$(this).css("background-image","url("+img+")");
+			});
+		});
+	</script>
+	
+	
+	<!--Stylesheets--> 
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap.min.css">
+	<link rel = "stylesheet" type="text/css" href = "css/bootstrap-theme.min.css"> 
+    <link rel = "stylesheet" type="text/css" href = "css/materialize.min.css"/> 
+	<link rel = "stylesheet" type="text/css" href = "css/harrogate.css"> 
+
+	<!--Import fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather'   rel='stylesheet' type='text/css'>
+</head>
+<body> 
+<!-- NAVBAR -->
+	<nav>
+	    <div class="nav-wrapper"> 
+		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			
+			<div class="wrapper">
+				<div class="logo">
+					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
+					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
+				</div>	  
+
+
+				<!-- Dropdown Structure -->
+				<ul id="aboutus" class="dropdown-content">
+				  <li><a href="./aboutus.html">Acerca de</a></li>
+				  <li><a href="./contact.html">Contacto</a></li> 
+				</ul>  
+
+				<ul id="programs" class="dropdown-content">
+				  <li><a href="./programs.html">Ver todos</a></li>
+				  <li><a href="./summer.html">Verano</a></li> 
+				  <li  class = "active"><a href="./harrogate.html">Harrogate</a></li> 
+				</ul>  
+				
+				<!--Menu en navbar-->
+			    <ul class = "navbtns right hide-on-med-and-down">
+				   <li><a class="dropdown-button" href="./aboutus.html" data-activates="aboutus">
+			        	Nosotros <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li class = "active"><a class="dropdown-button" href="./aboutus.html" data-activates="programs">
+			        	Programas <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li><a href="">¿Cómo me inscribo?</a></li> 			        
+			    </ul>
+			</div>
+
+			<!--Mobile menu -->
+		    <ul class="side-nav" id="mobile-demo">
+		    	<li><a href="./index.html">Inicio</a></li>
+		    	<li class="divider"></li>
+		        <li><a href="./aboutus.html">Nosotros</a></li>
+		        <li><a href="./contact.html">Contacto</a></li>
+		        <li class="divider"></li>
+		        <li><a href="./programs.html">Todos los Programas</a></li>
+		        <li><a href="./summer.html">Verano</a></li>
+		        <li class = "active"><a href="./Harrogate.html">Harrogate</a></li>
+		        <li class="divider"></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 
+		    </ul>
+	    </div>
+	</nav> 
+	
+
+	<section id="section0" class="cd-section">	  	 		
+		<div class="cover"></div>
+		<div class = "text">
+ 			<h1>Cursos de inglés en Harrogate</h1>
+ 			<span>Para mayores de 18 años</span>
+			<span>Duración: 2 - 24 semanas</span>
+		</div> 
+		<a class="btn-floating btn-large waves-effect waves-light z-depth-3 purple" id = "goto-top"><i class="material-icons">navigation</i></a>
+		<div class="menu-top"> 
+			<div class="item-wrapper">
+				<div class="item" id="item-1" section = "2">Cursos</div>
+				<div class="item" id="item-2" section = "3">CES Harrogate</div>
+				<div class="item" id="item-3" section = "4">Alojamiento</div> 
+				<div class="item" id="item-5" section = "5">Precio</div> 
+			</div>
+		</div>	
+	</section>
+
+
+
+	<section id="section1" class="cd-section">
+		<p>
+			La hermosa ciudad de Harrogate, siempre llena de flores, tiene entre sus
+			joyas a los jardines RHS Harlow Carr en los que se celebra la llegada
+			de las primeras flores del año en el Harrogate Spring Flower Festival.
+			Es conocida como ciudad-spa, cuyas aguas termales son apreciadas
+			desde tiempos de los romanos. Los increibles restaurantes y cafeterías,
+			así como sus hermosas tiendas de antigüedades la hacen una ciudad de
+			lo más elegante. En su actividad cultural se combinan exposiciones,
+			conciertos de jazz, opera y teatro.
+		</p>		
+	</section>
+
+
+	<section id = "section2" class="cd-section">
+		<h1> Cursos</h1>
+		<div class="curso">
+			<img src = "img/harrogate/courses/general.png">
+			<h2>Inglés General</h2>
+			<p class = "objetivo">
+				Objetivo: lograr una sólida comprensión del inglés y obtener seguridad al hablar.
+			</p>
+			<p>
+				Este curso se enfoca en aprender a comunicarse en la vida cotidiana. La atención
+				de un profesor ayudará a progresar ágilmente.
+				Estudia todas las mañanas de lunes a viernes de 9:30 am a 1:00 pm, y en las
+				tardes disfruta de tu tiempo libre: puedes unirte al programa social o estudiar con
+				nuestros recursos Self-Access, que cuenta con la presencia de un tutor durante las
+				tardes, para resolver dudas.
+			</p>
+			<p>
+				Los horarios de clase se dividen en dos periodos de 9:30 a 11:00 am y de 11:30
+				am a la 1:00 pm y por lo general son impartidas por profesores diferentes. Cada
+				clase tiene una duración de 45 minutos, por un total de 20 lecciones semanales
+				que suman 15 horas de clase.
+			</p>
+		</div>
+
+
+		<div class="curso">
+			<img src = "img/harrogate/courses/intensivo.png"/>
+			<h2>Inglés Intensivo</h2>
+			<p class = "objetivo">
+				Objetivo: aprender inglés rápidamente con fines académicos o profesionales.
+			</p>
+			<p>
+				Este curso combina clases en la mañana de 9:30 am a 1:00 pm de lunes a viernes,
+				y durante la tarde los martes, miércoles y jueves, de 2:00 a 4:30 pm. Esto suma
+				22:30 horas de clase, mediante 30 lecciones semanales de 45 minutos cada una.
+			</p>
+			<p>
+				Este curso te permite progresar al máximo durante tu estancia, ya que también
+				contarás con tutorías adicionales impartidas por el profesor principal, para resolver
+				dudas, analizar tus progresos y tus necesidades con más detalle. 
+			</p>
+		</div>
+
+
+		<div class="curso">
+			<img src = "img/harrogate/courses/ielts.png"/>
+			<h2>Preparación para el examen IELTS</h2>
+			<p class = "objetivo">
+				Objetivo: presentar exitosamente el examen de inglés más popular en la educación superior.
+			</p>
+			<p>
+				La mayoría de las entidades gubernamentales, académicas y de empleo requieren
+				un nivel de 5.5 a 7.5 de puntaje IELTS. CES Harrogate es un centro de examen
+				IELTS, lo cual te permite presentar este examen aquí mismo. 
+			</p>
+			<p>
+				Los estudiantes siguen las clases estándar de Inglés General por las mañanas, y
+				en las tardes de los martes, miércoles y jueves toman el curso de preparación
+				IELTS. El total de lecciones es 30 por semana
+			</p>
+			<p>
+				El curso se centra en la mejora del nivel de inglés, así como en el desarrollo de las
+				técnicas para contestar el examen. Al final de cada semana se hará una prueba, y
+				una práctica completa de IELTS durante la última semana del curso.
+			</p>
+			<p>
+				Además, contamos con recursos de autoaprendizaje: DVDs, libros con CDs, libros
+				de práctica para el examen IELTS y vocabulario y gramática. Ofrecemos sesiones
+				de auto-aprendizaje asesoradas por un profesor de orientación para todos los
+				estudiantes. Lunes de 1:00 a 3:00 pm, martes y jueves de 1:00 a 2:00 pm.
+			</p>
+		</div>
+
+	</section>
+	
+	<!--****************************************************-->
+
+	<section id="section3" class="cd-section">
+		<h1>CES HARROGATE</h1>
+		<p>
+			Ubicado en el corazón de la hermosa ciudad-spa de Harrogate y tan sólo a 5
+			minutos a pie de excelentes restaurantes y cafeterías, CES (Centre of English
+			Studies) es una pequeña y amigable escuela que cuenta con las mejores
+			instalaciones educativas en el ramo:
+		</p>
+		<ul>
+			<li>Grupos de 9 estudiantes máximo</li>
+			<li>Moderno centro de cómputo para estudio</li>
+			<li>Conexión a internet inalámbrica gratuita dentro de las instalaciones</li>
+			<li>Centro de estudio y biblioteca con un excelente acervo de material audiovisual</li>
+			<li>Profesorado y personal administrativo de gran experiencia</li>
+			<li>Teléfono de emergencia las 24 horas</li>
+			<li>Cafetería con servicio de té, café, sandwiches y bocadillos</li>
+			<li>Área común con sala de TV y variedad de juegos de mesa</li>
+		</ul>
+		<p>
+			Como parte de sus programas y para complementar la experiencia educativa,
+			ofrecemos actividades que estimulan la integraciónn social y la convivencia.
+		</p>
+	</section>
+	
+	<!--****************************************************-->
+
+	<section id="section4" class="cd-section">
+		<h1>Alojamiento</h1>
+		<h2>Hogar anfitrión</h2>
+		<p>
+			Hospedarse con familias lugareñas permite vivir al máximo la experiencia cultural
+			al adquirir modismos y usar expresiones coloquiales que definen el acento.
+		</p>
+		<p>
+			Te sentirás como en casa al convivir durante las comidas con tus anfitriones.
+			Las familias seleccionadas están preparadas para recibir a estudiantes
+			extranjeros. La mayoría de las casas están a poca distancia de la escuela o cerca
+			de una estación de transporte público.
+		</p> 
+		<h2>Alimentos</h2>
+		<p>
+			El hospedaje incluye el desayuno y la cena de lunes a viernes y todas las
+			comidas durante el fin de semana.
+		</p>
+	</section>
+
+	<!--****************************************************-->
+
+	<section id="section5" class="cd-section">
+		<h1>Precios de los cursos</h1> 
+		<p>
+			Aprovecha los precios que te ofrece Churchill House México y
+			ahorra hasta 25% al inscribirte con nosotros
+		</p>
+		<div class = "table">
+			<div class="column"> 
+				<div class="cell noborder"></div>
+				<div class="cell">Curso de inglés general</div>
+				<div class="cell">Curso de inglés intensivo</div>
+				<div class="cell">Curso de preparación para examen IELTS</div>
+				
+			</div>
+			<div class="column"> 
+				<div class="cell weeks noborder">De 1 a 4 semanas</div>
+				<div class="cell price"><div class="through">£168</div>£152</div>
+				<div class="cell price grow"><div class="through">£242</div>£207</div>		 
+			</div>
+			<div class="column">
+				<div class="cell weeks noborder">De 5 a 12 semanas</div> 
+				<div class="cell price"><div class="through">£158</div>£133</div>
+				<div class="cell price grow"><div class="through">£232</div>£180</div>				
+			</div> 
+			<div class="column">
+				<div class="cell weeks noborder">De 13 a 24 semanas</div>
+				<div class="cell price"><div class="through">£152</div>£110</div>
+				<div class="cell price grow"><div class="through">£226</div>£164</div>
+			</div>			
+		</div>
+		<div class="foot">Precios por semana</div>
+		<h1>Otros gastos</h1> 
+		<h2>Alojamiento en hogar anfitrión</h2> 
+		<p>
+			Incluye desayuno y cena de lunes a viernes y todas las comidas los fines de semana
+		</p>
+		<div class="price-wrapper">
+			<div class="price">
+				<div class="text">Habitación individual</div>
+				<div class="cost">£138 por semana</div>
+			</div>
+			<div class="price">
+				<div class="text">Habitación compartida</div>
+				<div class="cost">£130 por semana</div>
+			</div>
+		</div>
+		<br><br>
+		<h2>Traslados Aeropuerto-Harrogate</h2> 
+		<div class="price-wrapper">
+			<div class="price">
+				<div class="text">Heathrow Airport</div>
+				<div class="cost">£275</div>
+			</div>
+			<div class="price">
+				<div class="text">Manchester</div>
+				<div class="cost">£115</div>
+			</div> 
+
+			<div class="price">
+				<div class="text">Liverpool</div>
+				<div class="cost">£135</div>
+			</div>
+			<div class="price">
+				<div class="text">Leeds/Bradford</div>
+				<div class="cost">£65</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="price-wrapper">
+			<div class="other">
+				<h2>Seguro médico</h2>
+				<div class="cost">£7 por semana</div>
+			</div>
+			<div class="other">
+				<h2>Libro de Texto</h2>
+				<div class="cost">£30 aprox</div>
+			</div>
+			<div class="other">
+				<h2>Trámites</h2>
+				<div class="cost">£55</div>
+			</div>
+		</div>
+		<div class="note">No incluye boleto de avión</div>
+		<button class = "purple darken-1 waves-effect btn-large">
+			¿Cómo me inscribo?
+		</button>
+	</section>
+
+	<!--****************************************************-->
+
+	<!-- BRAND -->
+	<div class="container brand_container" id ="brand-section">
+		<img src = "img/l-1.svg" width="100" height="70" alt = "Churchill House MX"/>
+		<img src = "img/l-2.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-3.svg" width="60" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-4.svg" width="100" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-5.svg" width="60" height="60" alt = "Churchill House MX"/>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="page-footer grey darken-4" id ="footer-section">
+      <div class="container grey darken-4">
+        <div class="row">
+           
+          <div class="col s10 m3 l2 offset-l2 offset-m1 offset-s1">
+            <h6 class="white-text">Churchill House</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Galería</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Inglaterra</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
+            <h6 class="white-text">Programas</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
+            </ul>
+          </div>
+
+          <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
+            <h6 class="white-text">Descarga las formas de registro para:</h6>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li> 
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="footer-copyright  grey darken-4">
+        <div class="container">
+        	Churchill House Mexico © 2016. Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+</html>

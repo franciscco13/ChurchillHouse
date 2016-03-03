@@ -1,0 +1,102 @@
+section .text {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  padding: 100px 10% 50px 10%;
+  display: block;
+  margin: 0; }
+section h1, section h2, section span, section p, section ul {
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 0 auto; }
+section h1 {
+  color: #eD0286;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center; }
+section h2 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #eD0286; }
+section span {
+  display: block;
+  font-size: 15px;
+  padding: 0 40px;
+  text-align: center; }
+section li {
+  list-style: disc outside none;
+  display: list-item;
+  max-width: 90%;
+  margin-top: 5px;
+  margin-left: 2em; }
+section button {
+  display: block !important;
+  margin: 20px auto;
+  width: auto; }
+
+/******************************/
+section#section0 {
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/summer/cover.jpg");
+  color: white;
+  padding-bottom: 0;
+  height: auto;
+  max-height: auto; }
+  section#section0 h1 {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 40px;
+    color: white; }
+  section#section0 .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  section#section0 .btn-floating {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 20; }
+  section#section0 .menu-top {
+    color: white;
+    z-index: 5;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    width: auto !important; }
+    section#section0 .menu-top .item-wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: auto;
+      margin: 20px; }
+      section#section0 .menu-top .item-wrapper .item {
+        width: auto !important;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: white;
+        border: solid 2px white;
+        text-transform: uppercase;
+        transition: 0.3s; }
+        section#section0 .menu-top .item-wrapper .item:hover {
+          background-color: white;
+          color: #333; }
+
+/*# sourceMappingURL=sections.css.map */

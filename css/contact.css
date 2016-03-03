@@ -25,7 +25,7 @@ nav {
       background-color: none; }
 
 .nav-wrapper {
-  background-color: #CB2929; }
+  background-color: #16A093; }
   .nav-wrapper a, .nav-wrapper a:hover, .nav-wrapper a:active {
     text-decoration: none;
     color: white; }
@@ -58,7 +58,7 @@ nav {
       -ms-flex-align: center;
       align-items: center; }
       .nav-wrapper .wrapper .logo #logo-icon {
-        background-color: #CB2929;
+        background-color: #16A093;
         width: 80px;
         height: 80px;
         padding: 10px 10px 0 10px;
@@ -234,7 +234,7 @@ nav {
 
 .buttons_container {
   width: 100% !important;
-  background-color: #CB2929;
+  background-color: #16A093;
   padding: 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -312,7 +312,7 @@ nav {
       margin: 15px;
       padding: 30px; }
     .contact_container .phones h6 {
-      color: #CB2929;
+      color: #16A093;
       font-weight: 700; }
   .contact_container form {
     width: 350px;
@@ -322,10 +322,10 @@ nav {
     .contact_container form .input-field input {
       margin-bottom: 50px; }
     .contact_container form .input-field input:focus + label, .contact_container form .input-field textarea:focus + label {
-      color: #CB2929; }
+      color: #16A093; }
     .contact_container form .input-field input:focus, .contact_container form .input-field textarea:focus {
-      border-bottom: 1px solid #CB2929;
-      box-shadow: 0 1px 0 0 #CB2929; }
+      border-bottom: 1px solid #16A093;
+      box-shadow: 0 1px 0 0 #16A093; }
 
 .brand_container {
   background-color: white;
@@ -375,7 +375,7 @@ footer {
   padding: 20px 10px 10px 10px;
   text-align: center; }
 .about_section h1 {
-  color: #CB2929;
+  color: #16A093;
   font-size: 26px; }
   .about_section h1:nth-child(1) {
     margin-top: 50px; }
@@ -390,7 +390,7 @@ footer {
     padding: 20px 10px 20px 10px;
     text-align: center; }
   .programs_section h1 {
-    color: #CB2929;
+    color: #16A093;
     font-size: 26px; }
     .programs_section h1:nth-child(1) {
       margin-top: 50px; }
@@ -459,12 +459,12 @@ footer {
         padding: 15px 1px;
         width: 33% !important; }
       .programs_section .row .card table th {
-        color: #CB2929;
+        color: #16A093;
         text-align: center;
         font-size: 14px !important; }
       .programs_section .row .card table td i {
         font-size: 12px;
-        color: #CB2929;
+        color: #16A093;
         font-style: normal; }
       .programs_section .row .card table td span {
         font-weight: 300;
@@ -486,7 +486,7 @@ footer {
       color: #333;
       font-size: 16px; }
     .programs_section .card-content ul li span {
-      color: #CB2929;
+      color: #16A093;
       padding: 10px;
       display: inline-block;
       text-transform: uppercase; }
@@ -502,7 +502,7 @@ footer {
         line-height: 50px; }
       .programs_section .card-content .prices-table .price .time {
         text-transform: uppercase;
-        color: #CB2929; }
+        color: #16A093; }
       .programs_section .card-content .prices-table .price .cost {
         font-weight: 300;
         font-size: 30px; }
@@ -510,4 +510,45 @@ footer {
 .parallax-container {
   height: 400px; }
 
-/*# sourceMappingURL=aboutus.css.map */
+/******************************/
+.map {
+  background-image: url("../img/contact/map.png");
+  background-position: left center;
+  background-size: cover;
+  min-height: 500px; }
+  .map .container {
+    position: relative;
+    width: 100%;
+    min-height: 500px; }
+    .map .container .title {
+      color: #16A093;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .map .container .collection {
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      max-width: 400px; }
+      @media only screen and (max-width: 900px) {
+        .map .container .collection {
+          position: relative;
+          margin: 50px auto;
+          top: 0;
+          left: 0; } }
+  .map form {
+    padding: 30px;
+    background: rgba(240, 240, 240, 0.95);
+    border-radius: 4px;
+    max-width: 350px;
+    position: absolute;
+    bottom: 50px;
+    right: 500px; }
+    @media only screen and (max-width: 900px) {
+      .map form {
+        position: relative;
+        margin: 50px auto;
+        top: 0;
+        left: 0;
+        max-width: 400px; } }
+
+/*# sourceMappingURL=contact.css.map */

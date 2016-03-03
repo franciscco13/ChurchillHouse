@@ -25,7 +25,7 @@ nav {
       background-color: none; }
 
 .nav-wrapper {
-  background-color: #CB2929; }
+  background-color: #90268F; }
   .nav-wrapper a, .nav-wrapper a:hover, .nav-wrapper a:active {
     text-decoration: none;
     color: white; }
@@ -58,7 +58,7 @@ nav {
       -ms-flex-align: center;
       align-items: center; }
       .nav-wrapper .wrapper .logo #logo-icon {
-        background-color: #CB2929;
+        background-color: #90268F;
         width: 80px;
         height: 80px;
         padding: 10px 10px 0 10px;
@@ -234,7 +234,7 @@ nav {
 
 .buttons_container {
   width: 100% !important;
-  background-color: #CB2929;
+  background-color: #90268F;
   padding: 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -312,7 +312,7 @@ nav {
       margin: 15px;
       padding: 30px; }
     .contact_container .phones h6 {
-      color: #CB2929;
+      color: #90268F;
       font-weight: 700; }
   .contact_container form {
     width: 350px;
@@ -322,10 +322,10 @@ nav {
     .contact_container form .input-field input {
       margin-bottom: 50px; }
     .contact_container form .input-field input:focus + label, .contact_container form .input-field textarea:focus + label {
-      color: #CB2929; }
+      color: #90268F; }
     .contact_container form .input-field input:focus, .contact_container form .input-field textarea:focus {
-      border-bottom: 1px solid #CB2929;
-      box-shadow: 0 1px 0 0 #CB2929; }
+      border-bottom: 1px solid #90268F;
+      box-shadow: 0 1px 0 0 #90268F; }
 
 .brand_container {
   background-color: white;
@@ -375,7 +375,7 @@ footer {
   padding: 20px 10px 10px 10px;
   text-align: center; }
 .about_section h1 {
-  color: #CB2929;
+  color: #90268F;
   font-size: 26px; }
   .about_section h1:nth-child(1) {
     margin-top: 50px; }
@@ -390,7 +390,7 @@ footer {
     padding: 20px 10px 20px 10px;
     text-align: center; }
   .programs_section h1 {
-    color: #CB2929;
+    color: #90268F;
     font-size: 26px; }
     .programs_section h1:nth-child(1) {
       margin-top: 50px; }
@@ -459,12 +459,12 @@ footer {
         padding: 15px 1px;
         width: 33% !important; }
       .programs_section .row .card table th {
-        color: #CB2929;
+        color: #90268F;
         text-align: center;
         font-size: 14px !important; }
       .programs_section .row .card table td i {
         font-size: 12px;
-        color: #CB2929;
+        color: #90268F;
         font-style: normal; }
       .programs_section .row .card table td span {
         font-weight: 300;
@@ -486,7 +486,7 @@ footer {
       color: #333;
       font-size: 16px; }
     .programs_section .card-content ul li span {
-      color: #CB2929;
+      color: #90268F;
       padding: 10px;
       display: inline-block;
       text-transform: uppercase; }
@@ -502,7 +502,7 @@ footer {
         line-height: 50px; }
       .programs_section .card-content .prices-table .price .time {
         text-transform: uppercase;
-        color: #CB2929; }
+        color: #90268F; }
       .programs_section .card-content .prices-table .price .cost {
         font-weight: 300;
         font-size: 30px; }
@@ -510,4 +510,261 @@ footer {
 .parallax-container {
   height: 400px; }
 
-/*# sourceMappingURL=aboutus.css.map */
+/**************************/
+section .text {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  padding: 100px 10% 50px 10%;
+  display: block;
+  margin: 0; }
+section h1, section h2, section span, section p, section ul {
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 0 auto; }
+section h1 {
+  color: #90268F;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center; }
+section h2 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #90268F; }
+section p {
+  text-align: justify; }
+section span {
+  display: block;
+  font-size: 15px;
+  padding: 0 40px;
+  text-align: center; }
+section li {
+  list-style: disc outside none;
+  display: list-item;
+  max-width: 90%;
+  margin-top: 5px;
+  margin-left: 2em; }
+section button {
+  display: block !important;
+  margin: 20px auto;
+  width: auto; }
+
+/******************************/
+section#section0 {
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/harrogate/cover.jpg");
+  color: white;
+  padding: 50px;
+  height: auto;
+  position: relative !important; }
+  section#section0 h1 {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 40px;
+    color: white; }
+  section#section0 .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  section#section0 .btn-floating {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 20; }
+  section#section0 .menu-top {
+    color: white;
+    z-index: 5;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    width: auto !important; }
+    section#section0 .menu-top .item-wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: auto;
+      margin: 20px; }
+      section#section0 .menu-top .item-wrapper .item {
+        width: auto !important;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: white;
+        border: solid 2px white;
+        text-transform: uppercase;
+        transition: 0.3s; }
+        section#section0 .menu-top .item-wrapper .item:hover {
+          background-color: white;
+          color: #333; }
+
+/*********************/
+section#section1 {
+  min-height: auto !important;
+  padding: 30px;
+  background: #600470;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #600470), color-stop(100%, #3137b0));
+  background: linear-gradient(135deg, #600470 0%, #3137b0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#600470', endColorstr='#3137b0', GradientType=1 ); }
+  section#section1 p {
+    color: white;
+    text-align: justify; }
+
+/*********************/
+section#section2 {
+  background-color: #eee;
+  padding: 40px 30px; }
+  section#section2 img {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 20px auto;
+    display: block; }
+
+section#section3 {
+  padding: 40px 30px; }
+
+section#section4 {
+  padding: 40px 30px;
+  background-color: #eee; }
+
+section#section5 {
+  padding: 40px 30px; }
+  section#section5 .table {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section#section5 .table .column {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 150px; }
+      section#section5 .table .column .cell {
+        padding: 10px;
+        min-height: 90px;
+        text-align: center;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border: solid 1px #ccc; }
+        section#section5 .table .column .cell.noborder {
+          min-height: 85px;
+          border: solid 1px white !important; }
+        section#section5 .table .column .cell.grow {
+          -webkit-flex-grow: 2;
+          -ms-flex-positive: 2;
+          flex-grow: 2; }
+        section#section5 .table .column .cell.weeks {
+          color: #90268F; }
+        section#section5 .table .column .cell.price {
+          font-size: 20px;
+          text-align: center;
+          font-weight: 300; }
+        section#section5 .table .column .cell .through {
+          font-size: 12px;
+          font-weight: 400;
+          text-decoration: line-through; }
+  section#section5 .foot {
+    margin: 0 auto 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 450px; }
+  section#section5 .price-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    section#section5 .price-wrapper .price {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      margin: 5px;
+      width: auto;
+      background-color: #fafafa; }
+      section#section5 .price-wrapper .price .text {
+        padding: 0;
+        text-transform: uppercase;
+        width: auto; }
+      section#section5 .price-wrapper .price .cost {
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #555;
+        width: auto; }
+    section#section5 .price-wrapper .other {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: auto;
+      margin: 5px; }
+      section#section5 .price-wrapper .other .cost {
+        background-color: #fafafa;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: #555;
+        width: auto; }
+  section#section5 .note {
+    color: #90268F;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px; }
+
+/*# sourceMappingURL=harrogate.css.map */

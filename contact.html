@@ -16,7 +16,7 @@
 	<link rel = "stylesheet" type="text/css" href = "css/bootstrap.min.css">
 	<link rel = "stylesheet" type="text/css" href = "css/bootstrap-theme.min.css"> 
     <link rel = "stylesheet" type="text/css" href = "css/materialize.min.css"/> 
-	<link rel = "stylesheet" type="text/css" href = "css/aboutus.css">
+	<link rel = "stylesheet" type="text/css" href = "css/contact.css">
 
 	<!--Import fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,8 +39,8 @@
 
 				<!-- Dropdown Structure -->
 				<ul id="aboutus" class="dropdown-content">
-				  <li class = "active"><a href="./aboutus.html">Acerca de</a></li>
-				  <li><a href="./contact.html">Contacto</a></li> 
+				  <li><a href="./aboutus.html">Acerca de</a></li>
+				  <li class = "active"><a href="./contacto.html">Contacto</a></li> 
 				</ul>  
 
 				<ul id="programs" class="dropdown-content">
@@ -65,8 +65,8 @@
 		    <ul class="side-nav" id="mobile-demo">
 		    	<li><a href="./index.html">Inicio</a></li>
 		    	<li class="divider"></li>
-		        <li class = "active"><a href="./aboutus.html">Nosotros</a></li>
-		        <li><a href="./contact.html">Contacto</a></li>
+		        <li><a href="./aboutus.html">Nosotros</a></li>
+		        <li class = "active"><a href="./contact.html">Contacto</a></li>
 		        <li class="divider"></li>
 		        <li><a href="./programs.html">Todos los Programas</a></li>
 		        <li><a href="./summer.html">Verano</a></li>
@@ -77,72 +77,57 @@
 	    </div>
 	</nav> 
 
-	
-		
-	<div class="section about_section white">
-	    <div class="row container">
-	      	<h1 class="header">¿Qué es Churchill House?</h1>
-	      	<p class="grey-text text-darken-3 lighten-3">
-	      		Fundada en 1971, Churchill House School of English Languaje es una de
-				las escuelas privadas de inglés más grandes del Reino Unido y
-				reconocida a nivel mundial. Acreditada por el British Council desde hace
-				más de 30 años, es miembro de organizaciones como Quality English y
-				Education UK, entre otras.
-	      	</p>
-	    </div>
+
+
+	<div class="map">
+		<div class="container">
+			<ul class="collection">
+			    <li class="collection-item avatar ">
+			      	<img src="img/contact/mexico-flag.png" alt="" class="z-depth-1 responsive-img circle">
+			      	<span class="title">México</span>
+			      	<p>
+			      		Churchill House México <br>
+			        	+52 (55) 9000 45 79 <br>
+			        	ruben@churchillhouse.mx
+			      	</p> 
+			    </li>
+			    <li class="collection-item avatar">
+			      	<img src="img/contact/uk-flag.png" alt="" class="z-depth-1 responsive-img circle">
+			      	<span class="title">Inglaterra</span>
+			      	<p>
+			      		Churchill House School of English Language,
+						Spencer Square, Ramsgate, Kent, England, CT11 9EQ<br>
+			        	Tel: +44 (0)1843 586833<br>
+			        	Fax: +44 (0)1843 584 827
+			      	</p> 
+			    </li>  
+	  		</ul>
+	  		<form class ="z-depth-1">
+				<div class="input-field">
+		          	<input id = "name" type = "text" class = "validate">
+	          		<label for = "name" data-error="Nombre incorrecto" data-success="Nombre válido">Nombre</label>
+		        </div>
+
+		        <div class="input-field">
+		          	<input id = "email" type = "email" class = "validate">
+	          		<label for = "email" data-error="E-mail incorrecto" data-success="E-mail válido">E-mail</label>
+		        </div>
+
+		        <div class="input-field">
+		          	<textarea id = "textarea" class = "materialize-textarea"></textarea>
+		          	<label for="textarea">Mensaje</label>
+		        </div>
+
+		        <button class = "waves-effect waves-light btn-large">
+				 	Enviar
+				</button>
+			</form>
+  		</div>
+
+
 	</div>
 
-	<div class="parallax-container">
-	    <div class="parallax">
-	    	<img class="responsive-img" src = "img/aboutus/kids.jpg">
-	    </div>
-  	</div>	
 
-	<div class="section about_section white">
-	    <div class="row container">
-	      	<h1 class="header">Representación de Churchill House en México</h1>
-	      	<p class="grey-text text-darken-3 lighten-3">
-	      		Somos una empresa que inició en 2006 como vínculo entre la
-				Universidad del Oeste de Finlandia (Lansi Suomen Opisto) y la
-				comunidad estudiantil mexicana para ofrecer a nuestros jóvenes la
-				oportunidad de experimentar la práctica del idioma inglés en un
-				ambiente multicultural fuera de su país de origen.
-			</p>
-			<p>
-				En 2009 y con el mismo propósito, se firma un acuerdo de cooperación
-				bilateral con Churchill House, School of English Language en Inglaterra,
-				teniendo como premisa ofrecer a los jóvenes mexicanos las mejores
-				experiencias internacionales a través de sus programas educativos.
-	      	</p>
-	    </div>
-	</div>
-
-	<div class = "container logo_container">
-		<p>
-			“We place children at the heart of all that we do”
-			<i>(“Colocamos a los jóvenes en el corazón de lo que hacemos”)</i>
-		</p>
-		<span>		
-			Cada año, estructuramos programas que enriquecen el acervo cultural y
-			estimulan la creatividad mediante el desarrollo de habilidades
-			cognitivas, para sembrar en los estudiantes la inquietud por conocer
-			más, prepararse mejor y aspirar a una educación que los haga más
-			competitivos a través del intercambio cultural.
-		</span>
-	</div>
-
-	<div class="section about_section white">
-	    <div class="row container">
-	      	<h1 class="header">Misión</h1>
-	      	<p class="grey-text text-darken-3 lighten-3">
-	      		Nuestra misión es contribuir al crecimiento profesional de los futuros
-				líderes mexicanos desde su la adolescencia facilitando oportunidades
-				para tener acceso a estudios en el Reino Unido. Para ello, diseñamos los
-				programas culturales más completos, en las mejores escuelas y en los
-				ambientes más seguros.
-			</p> 
-	    </div>
-	</div>
 
 
 	<!-- BRAND -->
@@ -199,17 +184,6 @@
         </div>
       </div>
     </footer>
-
-
-
-
-	<!--Load parallax effect -->
-	<script type="text/javascript">
-		 $(function(){
-      		$('.parallax').parallax();
-    	});
-	</script>
-
 
    </body>
    </html>

@@ -86,12 +86,28 @@ nav {
           margin: 0 auto;
           width: 100%;
           margin-right: -100px; } }
+  .nav-wrapper .dropdown-content {
+    z-index: 20;
+    opacity: 1;
+    margin-top: 61px;
+    position: absolute;
+    width: inherit; }
+    .nav-wrapper .dropdown-content li a {
+      color: black; }
+      .nav-wrapper .dropdown-content li a:hover {
+        color: black;
+        background-color: transparent !important; }
   .nav-wrapper .navbtns {
     width: auto; }
     .nav-wrapper .navbtns li {
       width: auto;
       font-family: "Roboto";
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      position: relative; }
+      .nav-wrapper .navbtns li i {
+        width: auto;
+        padding: 0;
+        margin: 0; }
       .nav-wrapper .navbtns li a {
         font-size: 14px !important;
         padding: 0 30px; }
@@ -369,7 +385,7 @@ footer {
   margin-top: -10px;
   padding-top: 30px; }
   .programs_section h1, .programs_section p {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px 10px 20px 10px;
     text-align: center; }
@@ -440,7 +456,8 @@ footer {
       .programs_section .row .card .card-title {
         z-index: 10; }
       .programs_section .row .card table td, .programs_section .row .card table th {
-        width: 20% !important; }
+        padding: 15px 1px;
+        width: 33% !important; }
       .programs_section .row .card table th {
         color: #3ab54a;
         text-align: center;
@@ -451,10 +468,13 @@ footer {
         font-style: normal; }
       .programs_section .row .card table td span {
         font-weight: 300;
-        font-size: 30px;
+        font-size: 25px;
         display: block; }
-      .programs_section .row .card table td button:hover, .programs_section .row .card table td button:visited, .programs_section .row .card table td button:active, .programs_section .row .card table td button:link {
-        color: white !important; }
+      .programs_section .row .card table td button {
+        padding: 0 !important;
+        margin: 0; }
+        .programs_section .row .card table td button:hover, .programs_section .row .card table td button:visited, .programs_section .row .card table td button:active, .programs_section .row .card table td button:link {
+          color: white !important; }
   .programs_section .card-content {
     text-align: center;
     height: auto; }

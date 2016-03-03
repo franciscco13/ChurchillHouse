@@ -34,6 +34,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Merriweather'   rel='stylesheet' type='text/css'>
 </head>
 <body> 
+
 <!-- NAVBAR -->
 	<nav>
 	    <div class="nav-wrapper"> 
@@ -43,22 +44,49 @@
 				<div class="logo">
 					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
 					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
-				</div>	    
-		
+				</div>	  
+
+
+				<!-- Dropdown Structure -->
+				<ul id="aboutus" class="dropdown-content">
+				  <li><a href="./aboutus.html">Acerca de</a></li>
+				  <li><a href="./contact.html">Contacto</a></li> 
+				</ul>  
+
+				<ul id="programs" class="dropdown-content">
+				  <li><a href="./programs.html">Ver todos</a></li>
+				  <li  class = "active"><a href="./summer.html">Verano</a></li> 
+				  <li><a href="./harrogate.html">Harrogate</a></li> 
+				</ul>  
+				
+				<!--Menu en navbar-->
 			    <ul class = "navbtns right hide-on-med-and-down">
-				    <li><a href="./aboutus.html">Nosotros</a></li>
-			        <li><a href="./programs.html">Programas</a></li>
-			        <li><a href="">¿Cómo me inscribo?</a></li> 
+				   <li><a class="dropdown-button" href="./aboutus.html" data-activates="aboutus">
+			        	Nosotros <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li class = "active"><a class="dropdown-button" href="./aboutus.html" data-activates="programs">
+			        	Programas <i class="material-icons right">arrow_drop_down</i>
+			       	</a> </li>
+			        <li><a href="">¿Cómo me inscribo?</a></li> 			        
 			    </ul>
 			</div>
 
+			<!--Mobile menu -->
 		    <ul class="side-nav" id="mobile-demo">
+		    	<li><a href="./index.html">Inicio</a></li>
+		    	<li class="divider"></li>
 		        <li><a href="./aboutus.html">Nosotros</a></li>
-		        <li><a href="./programs.html">Programas</a></li>
+		        <li><a href="./contact.html">Contacto</a></li>
+		        <li class="divider"></li>
+		        <li><a href="./programs.html">Todos los Programas</a></li>
+		        <li class = "active"><a href="./summer.html">Verano</a></li>
+		        <li><a href="./Harrogate.html">Harrogate</a></li>
+		        <li class="divider"></li>
 		        <li><a href="">¿Cómo me inscribo?</a></li> 
 		    </ul>
 	    </div>
 	</nav> 
+
 
 	<!--****************************************************-->
 	<!-- <div class = "nav-fixed-lateral" id="cd-vertical-nav" >
@@ -203,10 +231,10 @@
 				      	<img class="activator" src="img/summer/activities/sports.png">
 				    </div>
 				    <div class="card-content">
-				     	<span class="card-title activator">Actividades deportivas<i class="material-icons right">more_vert</i></span>
+				     	<span class="card-title activator">Actividades deportivas<i>Ver más</i></span>
 				    </div>
 				    <div class="card-reveal">
-				      	<span class="card-title">Actividades deportivas<i class="material-icons right">close</i></span>
+				      	<span class="card-title">Actividades deportivas<i>Ver menos</i></span>
 				      	<p>
 				      		Cuatro días a la semana, de 2:00 a 5:30 en dos periodos de 1 hora y media con un
 							descanso de 30 minutos para un refrigerio. Los estudiantes pueden escoger entre
@@ -228,10 +256,10 @@
 				      	<img class="activator" src="img/summer/activities/cultural.png">
 				    </div>
 				    <div class="card-content">
-				     	<span class="card-title activator">Actividades culturales y de convivencia<i class="material-icons right">more_vert</i></span>
+				     	<span class="card-title activator">Actividades culturales y de convivencia<i>Ver más</i></span>
 				    </div>
 				    <div class="card-reveal">
-				      	<span class="card-title">Actividades culturales y de convivencia<i class="material-icons right">close</i></span>
+				      	<span class="card-title">Actividades culturales y de convivencia<i>Ver menos</i></span>
 				      	<p>
 				      		Todos los días, de 8:00 a 10:00 de la noche:
 				      		<ul>
@@ -258,10 +286,10 @@
 				      	<img class="activator" src="img/summer/activities/excursions.png">
 				    </div>
 				    <div class="card-content">
-				     	<span class="card-title activator">Excursiones y visitas cada semana<i class="material-icons right">more_vert</i></span>
+				     	<span class="card-title activator">Excursiones y visitas cada semana<i>Ver más</i></span>
 				    </div>
 				    <div class="card-reveal">
-				      	<span class="card-title">Excursiones y visitas cada semana<i class="material-icons right">close</i></span>
+				      	<span class="card-title">Excursiones y visitas cada semana<i>Ver menos</i></span>
 				      	<ul>
 				      		<li>Excursiones del día completo los fines de semana.</li>
 							<li>Excursiones de medio día una vez entre semana, después de clases.</li>
@@ -328,7 +356,7 @@
 		<div class="food">
 			<div class = "group-2">
 				<div class="group">
-					<h3>Desayuno</h3>
+					<h2>Desayuno</h2>
 					<div class="horario">de 8:00 a 9:00 am</div>			
 				</div>
 			</div>
@@ -342,11 +370,11 @@
 		<div class="food">
 			<div class = "group-2">
 				<div class ="group">
-					<h3>Lunch</h3>
+					<h2>Lunch</h2>
 					<div class="horario"> de 12:30 a 2:00 am</div>
 				</div>
 				<div class="group">
-					<h3>Cena</h3>
+					<h2>Cena</h2>
 					<div class="horario">de 5:30 a 8:00 pm</div>
 				</div>
 			</div>
@@ -374,7 +402,7 @@
 			</div>
 		</div>
 
-		<h3>INCLUYE TODOS LOS GASTOS DE LA ESTANCIA:</h3>
+		<h2>INCLUYE TODOS LOS GASTOS DE LA ESTANCIA:</h2>
 		<ul>
 			<li>Alojamiento residencial (con servicio de lavandería );</li>
 			<li>Alimentos (3 comidas diarias);</li>
@@ -382,11 +410,11 @@
 			<li>Todas las actividades deportivas, talleres y nocturnas;</li>
 			<li>Una excursión de medio día y una de un día completo por semana;</li>
 			<li>Acompañamiento de guías expertos;</li>
-			<li>Seguro de viaje.</li>
-			<li><span>NO INCLUYE BOLETO DE AVIÓN</span></li>
+			<li>Seguro de viaje.</li> 
+			<span>NO INCLUYE BOLETO DE AVIÓN</span>
 		</ul> 
 		<div class="descuento">
-			<h3>DESCUENTOS</h3>
+			<h2>DESCUENTOS</h2>
 			<span>Invita a un familiar o amigo en edad de 10 a 17 años y recibe un descuento de £100.</span>
 		</div> 
 		<button class = "pink darken-1 waves-effect btn-large">
