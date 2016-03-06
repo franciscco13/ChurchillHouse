@@ -26,16 +26,16 @@ Corregido detalles de responsividad
 
 v1.9 
 -------------------
-Agregado menú telefónico flotante
-Agregada galería en harrogate.html
-Agregado videos finales a index 
-Agregado menus desplegables en footer
-Agregado botón que envía a app movil (sin funcionalidad aún)
-Agregado favicon
-Corregido visores de imagenes
-Corregido links del menu lateral en versión movil
-Corregido detalles menores de summer.html y harrogate.html
-Corregido tamaño de los logos de patrocinadores
-Optimización de imagenes del sitio
-Quitado menús desplegables de navbar
+Agregado menú telefónico flotante<br>
+Agregada galería en harrogate.html<br>
+Agregado videos finales a index <br>
+Agregado menus desplegables en footer<br>
+Agregado botón que envía a app movil (sin funcionalidad aún)<br>
+Agregado favicon<br>
+Corregido visores de imagenes<br>
+Corregido links del menu lateral en versión movil<br>
+Corregido detalles menores de summer.html y harrogate.html<br>
+Corregido tamaño de los logos de patrocinadores<br>
+Optimización de imagenes del sitio<br>
+Quitado menús desplegables de navbar<br>
 
