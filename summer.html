@@ -41,51 +41,54 @@
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			
 			<div class="wrapper">
+				<a href = "./index.html">
 				<div class="logo">
 					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
 					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
 				</div>	  
+				</a>
 
 
 				<!-- Dropdown Structure -->
-				<ul id="aboutus" class="dropdown-content">
+				<!-- <ul id="aboutus" class="dropdown-content">
 				  <li><a href="./aboutus.html">Acerca de</a></li>
 				  <li><a href="./contact.html">Contacto</a></li> 
 				</ul>  
 
 				<ul id="programs" class="dropdown-content">
 				  <li><a href="./programs.html">Ver todos</a></li>
-				  <li  class = "active"><a href="./summer.html">Verano</a></li> 
+				  <li><a href="./summer.html">Verano</a></li> 
 				  <li><a href="./harrogate.html">Harrogate</a></li> 
-				</ul>  
+				</ul>  --> 
 				
 				<!--Menu en navbar-->
 			    <ul class = "navbtns right hide-on-med-and-down">
-				   <li><a class="dropdown-button" href="./aboutus.html" data-activates="aboutus">
-			        	Nosotros <i class="material-icons right">arrow_drop_down</i>
+				   <li><a href="./aboutus.html"> <!--  data-activates="aboutus" -->
+			        	Nosotros
 			       	</a> </li>
-			        <li class = "active"><a class="dropdown-button" href="./aboutus.html" data-activates="programs">
-			        	Programas <i class="material-icons right">arrow_drop_down</i>
+			        <li><a href="./programs.html">
+			        	Programas 
 			       	</a> </li>
 			        <li><a href="">¿Cómo me inscribo?</a></li> 			        
 			    </ul>
 			</div>
 
 			<!--Mobile menu -->
-		    <ul class="side-nav" id="mobile-demo">
-		    	<li><a href="./index.html">Inicio</a></li>
-		    	<li class="divider"></li>
-		        <li><a href="./aboutus.html">Nosotros</a></li>
+		    <ul class="side-nav" id="mobile-demo"> 
+		        <li ><a href="./aboutus.html">Nosotros</a></li>		        
+		        <li><a href="./programs.html">Programas</a></li>
 		        <li><a href="./contact.html">Contacto</a></li>
-		        <li class="divider"></li>
-		        <li><a href="./programs.html">Todos los Programas</a></li>
-		        <li class = "active"><a href="./summer.html">Verano</a></li>
-		        <li><a href="./Harrogate.html">Harrogate</a></li>
-		        <li class="divider"></li>
-		        <li><a href="">¿Cómo me inscribo?</a></li> 
+		     	<li class="divider"></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 		        
+		        <li><a href="">Solicitar un folleto</a></li>  
 		    </ul>
 	    </div>
 	</nav> 
+
+	<a class="waves-effect waves-light btn phone_button white black-text" href = "./contact.html">
+		<i class="material-icons left">phone</i>
+		(55) 90 00 45 79
+	</a>
 
 
 	<!--****************************************************-->
@@ -130,7 +133,9 @@
 		</ul>
 	</div> -->
 
-	
+	<a class="btn-floating btn-large waves-effect waves-light z-depth-3  grey darken-3" id = "phone-app">
+		<i class="material-icons">phone_iphone</i>
+	</a>
 
 	<section id="section0" class="cd-section">	  	 		
 		<div class="cover"></div>
@@ -139,7 +144,9 @@
  			<span>Para estudiantes entre 10 y 17 años de edad</span>
 			<span>Duración: 2 - 3 semanas</span>
 		</div> 
-		<a class="btn-floating btn-large waves-effect waves-light z-depth-3 pink" id = "goto-top"><i class="material-icons">navigation</i></a>
+		<a class="btn-floating btn-large waves-effect waves-light z-depth-3 pink" id = "goto-top">
+			<i class="material-icons">arrow_upward</i>
+		</a>
 		<div class="menu-top"> 
 			<div class="item-wrapper">
 				<div class="item" id="item-1" section = "2">Lecciones</div>
@@ -190,32 +197,31 @@
 	</section>
 	
 	<section id="section3" class="cd-section">
-		<div class="row">
+		<div class="row image-gallery">
+        	<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/1.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/2.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/3.jpg">	</div>
+			</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/4.jpg">	</div>
+			</div>
 
-        	<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/1.jpg">	</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/5.jpg">	</div>
 			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/2.jpg">	</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/6.jpg">	</div>
 			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/3.jpg">	</div>
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/7.jpg">	</div> 
 			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/4.jpg">	</div>
-			</div>
-
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/5.jpg">	</div>
-			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/6.jpg">	</div>
-			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/7.jpg">	</div> 
-			</div>
-			<div class="col s12 m4 l3">
-				<div class = "img-ico">	<img class="materialboxed" src="img/summer/gallery/8.jpg">	</div> 
+			<div class="col s12 m4 l3 imgpreview">
+				<div class = "img-ico">	<img src="img/summer/gallery/8.jpg">	</div> 
 			</div>
 		</div>
 		
@@ -224,7 +230,7 @@
 
 		<div class="cards-container">
 		<div class="row">
-        	<div class="col s12 m6 l4">
+        	<div class="col s10 m6 l4 offset-s1">
 				
 				<div class="card">
 				    <div class="card-image waves-effect waves-block waves-light">
@@ -250,7 +256,7 @@
 				</div>
 			</div>
 
-			<div class="col s12 m6 l4">
+			<div class="col s10 m6 l4 offset-s1">
 				<div class="card">
 				    <div class="card-image waves-effect waves-block waves-light">
 				      	<img class="activator" src="img/summer/activities/cultural.png">
@@ -262,7 +268,7 @@
 				      	<span class="card-title">Actividades culturales y de convivencia<i>Ver menos</i></span>
 				      	<p>
 				      		Todos los días, de 8:00 a 10:00 de la noche:
-				      		<ul>
+				      		<!-- <ul>
 				      			<li>Welcome party (fiesta de bienvenida)</li>
 				      			<li>Barbecue night (asado al aire libre)</li>
 					      		<li>Future fashion show (desfile de modas)</li>
@@ -274,13 +280,16 @@
 					      		<li>cineclub</li>
 					      		<li>concursos </li>
 					      		<li>baile</li>
-							</ul>
+							</ul> -->
+				      		Welcome party (fiesta de bienvenida), barbecue night (asado al aire libre),
+					      	future fashion show (desfile de modas), noche de talentos, 
+					      	rally, fiesta internacional, disco, karaoke, cineclub, concursos, baile 
 						</p> 
 				    </div>
 				</div>
 			</div> 
 			
-			<div class="col s12 m6 l4 offset-m3">
+			<div class="col s10 m6 l4 offset-s1 offset-m3">
 				<div class="card">
 				    <div class="card-image waves-effect waves-block waves-light">
 				      	<img class="activator" src="img/summer/activities/excursions.png">
@@ -343,10 +352,10 @@
 			<li>Extensas áreas verdes.</li>
 		</ul>
 		<div class="row plant-row"> 
-			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant/Equitacion.jpg">	</div>	 
-			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant/Pool.jpg">	</div>  
-			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant/Residence.jpg">	</div> 
-			<div class = "img-ico">	<img class="materialboxed" src="img/summer/plant/Theatre.jpg">	</div> 
+			<div class = "img-ico imgpreview">	<img src="img/summer/plant/Equitacion.jpg">	</div>	 
+			<div class = "img-ico imgpreview">	<img src="img/summer/plant/Pool.jpg">	</div>  
+			<div class = "img-ico imgpreview">	<img src="img/summer/plant/Residence.jpg">	</div> 
+			<div class = "img-ico imgpreview">	<img src="img/summer/plant/Theatre.jpg">	</div> 
 		</div>
 	</section>
 
@@ -427,50 +436,53 @@
 
 	<!-- BRAND -->
 	<div class="container brand_container" id ="brand-section">
-		<img src = "img/l-1.svg" width="100" height="70" alt = "Churchill House MX"/>
-		<img src = "img/l-2.svg" width="100" height="60" alt = "Churchill House MX"/>
-		<img src = "img/l-3.svg" width="60" height="60" alt = "Churchill House MX"/>
-		<img src = "img/l-4.svg" width="100" height="60" alt = "Churchill House MX"/>
-		<img src = "img/l-5.svg" width="60" height="60" alt = "Churchill House MX"/>
+		<img src = "img/l-1.svg" alt = "Churchill House MX"/>
+		<img src = "img/l-2.svg" alt = "Churchill House MX"/>
+		<img src = "img/l-3.svg" alt = "Churchill House MX"/>
+		<img src = "img/l-4.svg" alt = "Churchill House MX"/>
+		<img src = "img/l-5.svg" alt = "Churchill House MX"/>
 	</div>
 
-
 	<!-- FOOTER -->
-	<footer class="page-footer grey darken-4" id ="footer-section">
+	 <footer class="page-footer grey darken-4">
       <div class="container grey darken-4">
         <div class="row">
            
-          <div class="col s10 m3 l2 offset-l2 offset-m1 offset-s1">
-            <h6 class="white-text">Churchill House</h6>
+         <div class="col s10 m4 l3 offset-l3 offset-m2 offset-s1">
+            <h6 class="white-text droplist">
+            	Churchill House
+            	<span class = "glyphicon glyphicon-menu-down ico-down"></span>
+            	<span class = "glyphicon glyphicon-menu-up ico-up"></span>
+            </h6>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Galería</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Inglaterra</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+              <li><a class="grey-text text-lighten-3" href="./aboutus.html">Nosotros</a></li>              
+              <li><a class="grey-text text-lighten-3" href="./contact.html">Contacto</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li> 
             </ul>
           </div>
 
-          <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
-            <h6 class="white-text">Programas</h6>
+          <div class="col s10 m4 l3 offset-l1 offset-m1 offset-s1 ">
+            <h6 class="white-text droplist">
+            	Programas
+            	<span class = "glyphicon glyphicon-menu-down ico-down"></span>
+            	<span class = "glyphicon glyphicon-menu-up ico-up"></span>
+            </h6>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
+              <li><a class="grey-text text-lighten-3" href="./summer.html">Campamento de Verano</a></li>
+              <li><a class="grey-text text-lighten-3" href="">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="./harrogate.html">Cursos de inglés</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
             </ul>
           </div>
 
-          <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
+          <!-- <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
             <h6 class="white-text">Descarga las formas de registro para:</h6>
             <ul>
               <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li> 
             </ul>
-          </div>
-
-
+          </div> -->
         </div>
       </div>
       <div class="footer-copyright  grey darken-4">
@@ -480,6 +492,34 @@
       </div>
     </footer>
 
+    <section class = "image-viewer">    	
+     	<div class = "image-viewer-wrapper">
+     		
+	    	<div class="main-image z-depth-3">
+	    		<div class = "close"> <i class="material-icons">clear</i></div>
+	    	</div>
+	    	<div class="previews">   
+	    	</div>
+	    </div>
+    </section>
+
+<script>
+	$(function(){
+		$('.btn-floating').affix({
+	  		offset: {
+	    		top: 100,
+	    		bottom: function () {
+	      			return getFooterH()
+	    		}
+	  		}
+		});
+
+		function getFooterH(){
+			return $("footer").height()+$(".brand_container").height()+150;
+		}
+	});
+
+</script>
 
 </body>
 </html>

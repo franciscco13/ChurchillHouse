@@ -31,14 +31,16 @@
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			
 			<div class="wrapper">
+				<a href = "./index.html">
 				<div class="logo">
 					<img id = "logo-icon" src = "img/logo-white.svg" width="20px" height="70px"/>
 					<img id = "logo-text" src = "img/logo-name.svg"  width="40" height="35px" alt = "Churchill House MX"/>
 				</div>	  
+				</a>
 
 
 				<!-- Dropdown Structure -->
-				<ul id="aboutus" class="dropdown-content">
+				<!-- <ul id="aboutus" class="dropdown-content">
 				  <li><a href="./aboutus.html">Acerca de</a></li>
 				  <li><a href="./contact.html">Contacto</a></li> 
 				</ul>  
@@ -47,36 +49,36 @@
 				  <li><a href="./programs.html">Ver todos</a></li>
 				  <li><a href="./summer.html">Verano</a></li> 
 				  <li><a href="./harrogate.html">Harrogate</a></li> 
-				</ul>  
+				</ul>  --> 
 				
 				<!--Menu en navbar-->
 			    <ul class = "navbtns right hide-on-med-and-down">
-				   <li><a class="dropdown-button" href="./aboutus.html" data-activates="aboutus">
-			        	Nosotros <i class="material-icons right">arrow_drop_down</i>
+				   <li><a href="./aboutus.html"> <!--  data-activates="aboutus" -->
+			        	Nosotros
 			       	</a> </li>
-			        <li><a class="dropdown-button" href="./aboutus.html" data-activates="programs">
-			        	Programas <i class="material-icons right">arrow_drop_down</i>
+			        <li><a href="./programs.html">
+			        	Programas 
 			       	</a> </li>
 			        <li><a href="">¿Cómo me inscribo?</a></li> 			        
 			    </ul>
 			</div>
 
 			<!--Mobile menu -->
-		    <ul class="side-nav" id="mobile-demo">
-		    	<li class = "active"><a href="./index.html">Inicio</a></li>
-		    	<li class="divider"></li>
-		        <li ><a href="./aboutus.html">Nosotros</a></li>
+		    <ul class="side-nav" id="mobile-demo"> 
+		        <li ><a href="./aboutus.html">Nosotros</a></li>		        
+		        <li><a href="./programs.html">Programas</a></li>
 		        <li><a href="./contact.html">Contacto</a></li>
-		        <li class="divider"></li>
-		        <li><a href="./programs.html">Todos los Programas</a></li>
-		        <li><a href="./summer.html">Verano</a></li>
-		        <li><a href="./Harrogate.html">Harrogate</a></li>
-		        <li class="divider"></li>
-		        <li><a href="">¿Cómo me inscribo?</a></li> 
+		     	  <li class="divider"></li>
+		        <li><a href="">¿Cómo me inscribo?</a></li> 		        
+		        <li><a href="">Solicitar un folleto</a></li>  
 		    </ul>
 	    </div>
 	</nav> 
 
+	<a class="waves-effect waves-light btn phone_button white black-text" href = "./contact.html">
+		<i class="material-icons left">phone</i>
+		(55) 90 00 45 79
+	</a>
 
 	<!--SLIDER -->
 	<section class="container-fluid slider-container">
@@ -94,10 +96,11 @@
 				    <div class="item active" src ="img/index/campamentos.jpg"> 
 					  	<div class="carousel-caption">
 					    	<h3>Campamento de verano en Inglaterra</h3>
+					    	<a href = "./summer.html">
 					    	<button class = "blue waves-effect waves-light btn-large">
 							 	Ver detalles
 							</button>
-
+							</a>
 					  	</div>
 					</div>
  
@@ -135,7 +138,7 @@
 	<!--VIDEO -->
 	<div class="container video_container">
 		<div class="embed-responsive embed-responsive-16by9 video">
-			<iframe src="https://www.youtube.com/embed/_1kvLcyu37U" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/mhTZ4D25PWY" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -156,7 +159,7 @@
 	<!--VIDEO -->
 	<div class="container video_container">
 		<div class="embed-responsive embed-responsive-16by9 video">
-			<iframe src="https://www.youtube.com/embed/hIExdwcU4wg" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/vVH4dJ_-Lac" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -243,37 +246,41 @@
       <div class="container grey darken-4">
         <div class="row">
            
-          <div class="col s10 m3 l2 offset-l2 offset-m1 offset-s1">
-            <h6 class="white-text">Churchill House</h6>
+          <div class="col s10 m4 l3 offset-l3 offset-m2 offset-s1">
+            <h6 class="white-text droplist">
+            	Churchill House
+            	<span class = "glyphicon glyphicon-menu-down ico-down"></span>
+            	<span class = "glyphicon glyphicon-menu-up ico-up"></span>
+            </h6>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Galería</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Inglaterra</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+              <li><a class="grey-text text-lighten-3" href="./aboutus.html">Nosotros</a></li>              
+              <li><a class="grey-text text-lighten-3" href="./contact.html">Contacto</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li> 
             </ul>
           </div>
 
-          <div class="col s10 m3 l2 offset-l1 offset-m1 offset-s1 ">
-            <h6 class="white-text">Programas</h6>
+          <div class="col s10 m4 l3 offset-l1 offset-m1 offset-s1 ">
+            <h6 class="white-text droplist">
+            	Programas
+            	<span class = "glyphicon glyphicon-menu-down ico-down"></span>
+            	<span class = "glyphicon glyphicon-menu-up ico-up"></span>
+            </h6>
             <ul>
               <li><a class="grey-text text-lighten-3" href="./summer.html">Campamento de Verano</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li>
+              <li><a class="grey-text text-lighten-3" href="">Año académico</a></li>
+              <li><a class="grey-text text-lighten-3" href="./harrogate.html">Cursos de inglés</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">¿Cómo me inscribo?</a></li> 
             </ul>
           </div>
 
-          <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
+          <!-- <div class="col s10 m3 l2  offset-l1 offset-m1 offset-s1">
             <h6 class="white-text">Descarga las formas de registro para:</h6>
             <ul>
               <li><a class="grey-text text-lighten-3" href="#!">Campamento de Verano</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Año académico</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Curso de inglés</a></li> 
             </ul>
-          </div>
-
-
+          </div> -->
         </div>
       </div>
       <div class="footer-copyright  grey darken-4">
